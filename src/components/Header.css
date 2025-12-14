@@ -1,0 +1,140 @@
+
+.total-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+	padding: 0.5rem 2rem; 
+	max-width: 1200px; 
+	margin: 0 auto;
+  padding-top: 20px;
+}
+.total-header .header-left {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+}
+.total-header .header-right {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	flex-wrap: wrap;
+}
+
+
+.navbar-custom .dropdown-toggle {
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	color: #ffffff !important;
+	background-color: transparent !important;
+	border: 1px solid transparent;
+	padding: 0.25rem 0.5rem;
+}
+
+.total-header .dropdown-toggle {
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	color: #000000 !important; 
+	background-color: transparent !important;
+	border: 1px solid transparent;
+	padding: 0.25rem 0.5rem;
+}
+
+.total-header .dropdown-menu .dropdown-item,
+.navbar-custom .dropdown-menu .dropdown-item {
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	color: #000000; 
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+	.total-header {
+		flex-direction: column;
+		align-items: stretch;
+	}
+	.total-header .header-right {
+		justify-content: flex-start;
+	}
+}
+
+
+@media (hover: hover) and (min-width: 768px) {
+	.navbar-custom .dropdown .dropdown-menu {
+		transition: opacity 0.15s ease, transform 0.15s ease;
+		opacity: 0;
+		transform: translateY(6px);
+	}
+
+	.navbar-custom .dropdown:hover > .dropdown-menu {
+		display: block;
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+
+.total-header .dropdown,
+.dropdown {
+	position: relative;
+}
+.total-header .dropdown .dropdown-menu,
+.dropdown .dropdown-menu {
+	display: none; 
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 2000;
+	min-width: 10rem;
+	padding: 0.25rem 0;
+	margin: 0.25rem 0 0;
+	background-color: #ffffff;
+	border: 1px solid rgba(0,0,0,0.15);
+	border-radius: 0.25rem;
+	box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.175);
+  
+}
+
+
+@media (hover: hover) {
+	.total-header .dropdown:hover > .dropdown-menu,
+	.dropdown:hover > .dropdown-menu {
+		display: block;
+	}
+}
+
+.total-header .dropdown:focus-within > .dropdown-menu,
+.dropdown:focus-within > .dropdown-menu {
+	display: block;
+}
+
+.total-header .dropdown-menu .dropdown-item,
+.dropdown-menu .dropdown-item {
+	color: #212529; 
+}
+
+
+.total-header .dropdown-menu .dropdown-item,
+.dropdown-menu .dropdown-item,
+.navbar-custom .dropdown-menu .dropdown-item {
+  padding: 10px 14px;
+}
+
+
+.total-header .dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item:hover,
+.navbar-custom .dropdown-menu .dropdown-item:hover {
+	color: #ae485e !important;
+}
+
+
