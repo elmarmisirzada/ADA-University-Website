@@ -1,0 +1,63 @@
+.discover-little-parts {
+
+    background-color: #af5262;
+
+
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    gap: 100px;
+
+
+
+
+}
+
+.discover-left h1,
+p {
+    color: #fff;
+}
+
+.discover-left h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.discover-left p {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.discover-right h1 {
+    color: #fff;
+
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.discover-right button {
+    background-color: #af5262;
+    border-color: #fff;
+    color: #fff;
+    margin-bottom: 0;
+    width: 100%;
+    padding: 12px 30px;
+    font-size: 14px;
+    line-height: normal;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.discover-right button:hover {
+    background-color: #fff;
+    color: #336178;
+    border-color: #fff;
+    font-size: 14px;
+    line-height: normal;
+    font-style: normal;
+    font-weight: 700;
+}
