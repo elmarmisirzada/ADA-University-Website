@@ -4,6 +4,12 @@ import './App.css'
 import Navbar from './components/Navbar'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import BackgroundandCard from './components/BackgroundandCard'
+import StudyingADA from './components/StudyingADA'
+import DiscoverADA from './components/DiscoverADA'
+import DifferentCampus from './components/DifferentCampus'
+import Numbers from './components/Numbers'
+import MeetAlumni from './components/MeetAlumni'
 
 function App() {
   
@@ -12,6 +18,12 @@ function App() {
     <>
       <Navbar />
       <Header />
+      <BackgroundandCard />
+      <StudyingADA />
+      <DiscoverADA />
+      <DifferentCampus />
+      <Numbers />
+      <MeetAlumni />
       <Footer/>
     </>
   )
