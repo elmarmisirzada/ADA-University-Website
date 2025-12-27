@@ -1,0 +1,22 @@
+.top-alumni{
+    display: flex;
+    justify-content: space-between;
+}
+.top-alumni h1{
+    color: #336178;
+    font-size: 48px;
+    font-weight: 630;
+    line-height: 120%;
+}
+
+.top-alumni button{
+    background-color: #7c889b;
+    border-color: #7c889b;
+    color: #fff;
+    width: auto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    height: auto;
+    padding: 15px 25px;
+}   

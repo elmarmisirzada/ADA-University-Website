@@ -1,0 +1,35 @@
+.students-top, .faculty-top, .partner-top, .alumni-top{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.student-icon, .faculty-icon, .world-icon, .work-icon{
+    width: 40px;
+    height: 40px;
+    color: #fff;
+}
+
+.total-numbers{
+    padding: 70px 0;
+    margin-bottom: 50px;
+    background-color: #224e61;
+}
+
+.all-numbers h1{
+    font-family: "Urbanist", sans-serif;
+    font-size: 74px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 51px;
+    color: #fff;
+}
+
+.all-numbers h5{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #fff;
+}
