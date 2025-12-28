@@ -1,6 +1,7 @@
 .top-alumni{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 25px;
 }
 .top-alumni h1{
     color: #336178;
@@ -13,10 +14,32 @@
     background-color: #7c889b;
     border-color: #7c889b;
     color: #fff;
-    width: auto;
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
-    height: auto;
-    padding: 15px 25px;
+    padding: 0px 35px !important;
 }   
+
+.middle-alumni{
+    display: flex;
+    justify-content: center;
+}
+
+.bottom-alumni{
+    padding-left: 25px;
+}
+
+.bottom-alumni p{
+    font-style: normal;
+    color: #292929;
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 500;
+}
+
+.bottom-alumni h1{
+    color: #336178;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
