@@ -10,6 +10,8 @@ import DiscoverADA from './components/DiscoverADA'
 import DifferentCampus from './components/DifferentCampus'
 import Numbers from './components/Numbers'
 import MeetAlumni from './components/MeetAlumni'
+import NewEvents from './components/NewEvents'
+import Experience from './components/Experience'
 
 function App() {
   
@@ -24,6 +26,8 @@ function App() {
       <DifferentCampus />
       <Numbers />
       <MeetAlumni />
+      <NewEvents />
+      <Experience />
       <Footer/>
     </>
   )
