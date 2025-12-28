@@ -1,4 +1,14 @@
 
+.header-wrapper {
+	position: fixed;
+	top: 56px;
+	left: 0;
+	right: 0;
+	z-index: 999;
+	background-color: #ffffff;
+	width: 100%;
+}
+
 .total-header {
 	display: flex;
 	align-items: center;
@@ -7,7 +17,7 @@
 	padding: 0.5rem 2rem; 
 	max-width: 1200px; 
 	margin: 0 auto;
-  padding-top: 20px;
+	background-color: #ffffff;
 }
 .total-header .header-left {
 	display: flex;

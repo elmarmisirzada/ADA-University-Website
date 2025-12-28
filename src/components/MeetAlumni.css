@@ -1,0 +1,45 @@
+.top-alumni{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+.top-alumni h1{
+    color: #336178;
+    font-size: 48px;
+    font-weight: 630;
+    line-height: 120%;
+}
+
+.top-alumni button{
+    background-color: #7c889b;
+    border-color: #7c889b;
+    color: #fff;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    padding: 0px 35px !important;
+}   
+
+.middle-alumni{
+    display: flex;
+    justify-content: center;
+}
+
+.bottom-alumni{
+    padding-left: 25px;
+}
+
+.bottom-alumni p{
+    font-style: normal;
+    color: #292929;
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 500;
+}
+
+.bottom-alumni h1{
+    color: #336178;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}

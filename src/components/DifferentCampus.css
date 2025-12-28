@@ -1,0 +1,49 @@
+.different-campus {
+    padding: 70px 0;
+}
+
+.all-campus img {
+    width: 100%;
+    height: 65%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.all-campus img:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+.all-campus a{
+    text-decoration: none;
+}
+
+.all-campus h3{
+    color: #ae485e;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.all-campus p{
+    color: #292929;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+.special-h1{
+    color: #336178;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 120%;
+    margin-bottom: 16px;
+}
+.special-p{
+    line-height: 30px;
+    font-style: normal;
+    color: #292929;
+}

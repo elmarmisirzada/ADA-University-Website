@@ -1,0 +1,57 @@
+[
+    {
+        
+        "title": "Publication",
+        "image": "https://www.ada.edu.az/media/2025/05/06/book.jpg",
+        "description": "An Ambassador’s Manifesto by Rector Hafiz Pashayev",
+        "readMore": "READ MORE"
+    },
+    {
+        "title": "Dual Degree Master Programs",
+        "image": "https://www.ada.edu.az/media/2025/10/30/91cefcc7_98d2_47f4_bcb8_32e8cb20a6fd.jpeg",
+        "description": "Advance Your Career with a Dual Master’s Degree",
+        "readMore": "READ MORE"
+    },
+    {
+        "title": "Student Success",
+        "image": "https://www.ada.edu.az/media/2025/05/06/texas.jpg",
+        "description": "ADA Student Recognized for Excellence at Texas A&M International Conference",
+        "readMore": "READ MORE"
+    },
+    {
+        "title": "Application",
+        "image": "https://www.ada.edu.az/media/2025/05/07/b-1.jpeg",
+        "description": "ADA High School - Final Step to ADA University",
+        "readMore": "READ MORE"
+    },
+    {
+        "title": "Application",
+        "image": "https://www.ada.edu.az/media/2025/05/07/picture2.png",
+        "description": "Initial Step Towards ADA",
+        "readMore": "READ MORE"
+    },
+    {
+        "title": "Contribution",
+        "image": "https://www.ada.edu.az/media/2025/05/14/untitled_design_1_-1.jpg",
+        "description": "Faculty Contribution to Scientific Literature",
+        "readMore": "READ MORE"
+    },
+    {
+        "title": "Life at ADA",
+        "image": "https://www.ada.edu.az/media/2025/05/06/dance-1.jpeg",
+        "description": "Colorful ADA Studentship",
+        "readMore": "READ MORE"
+    },
+    {
+        "title": "Campus",
+        "image": "https://www.ada.edu.az/media/2025/05/06/kampus.jpeg",
+        "description": "ADA Family: Story of Belonging",
+        "readMore": "READ MORE"
+    },
+    {
+        "title": "TAGHIYEV Legacy",
+        "image": "https://www.ada.edu.az/media/2025/05/14/untitled_design_4_.jpg",
+        "description": "Social Responsibility in Our DNA",
+        "readMore": "READ MORE"
+    }
+]

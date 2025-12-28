@@ -3,7 +3,8 @@ import './Header.css'
 
 const Header:React.FC = () => {
   return (
-    <div className='total-header'>
+    <div className='header-wrapper'>
+      <div className='total-header'>
         <div className='header-left'>
             <img src="https://www.ada.edu.az/assets/img/logo.svg" alt="ADA Logo" />
         </div>
@@ -17,7 +18,7 @@ const Header:React.FC = () => {
               </button>
               <ul className="dropdown-menu">
                 <li><a className="dropdown-item" href="#">Leadership & Governance</a></li>
-                <li><a className="dropdown-item" href="#">ADA University</a></li>
+                <li><a className="dropdown-item" href="/ada-university">ADA University</a></li>
                 <li><a className="dropdown-item" href="#">Italy-Azerbaijan University</a></li>
                 <li><a className="dropdown-item" href="#">Accreditations and Rankings</a></li>
                 <li><a className="dropdown-item" href="#">Campus</a></li>
@@ -95,6 +96,7 @@ const Header:React.FC = () => {
             </div>
           </div>
         </div>
+      </div>
     </div>
   )
 }

@@ -1,0 +1,32 @@
+.our-story-total {
+    position: relative;
+    background-color: #fff;
+    padding: 60px 0;
+    z-index: 1;
+}
+
+.our-story-total h1 {
+font-size: 48px;
+    color: #336178;
+    margin-bottom: 30px;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.our-story-total p {
+    line-height: 30px;
+    font-style: normal;
+    color: #292929;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.our-story-total a {
+    color: #336178;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.our-story-total a:hover {
+    color: #274c5e;
+}
