@@ -3,6 +3,9 @@ import './ADAUniversityPage.css'
 import { FaArrowRightLong } from "react-icons/fa6"
 import { Link } from 'react-router-dom'
 import OurStory from './OurStory'
+import MissionandVision from './MissionandVision'
+import CoreValues from './CoreValues'
+import BrandAssets from './BrandAssets'
 
 
 const ADAUniversityPage: React.FC = () => {
