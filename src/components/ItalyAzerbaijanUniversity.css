@@ -1,0 +1,120 @@
+.total-italy-azerbaijan-university {
+    position: relative;
+    margin-top: 150px;
+    
+}
+
+.image-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    z-index: -1;
+}
+
+.background-image {
+    width: 100%;
+    height: 125%;
+    object-fit: cover;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    padding: 100px 40px;
+    color: white;
+}
+
+.content h1 {
+
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: normal;
+}
+
+.top-italy-azerbaijan-university {
+    padding-top: 390px;
+    position: relative;
+    top: -64px;
+}
+
+.top-italy-azerbaijan-university button {
+    color: #fff;
+    background-color: #336178;
+    border: none;
+    opacity: 0.9;
+    padding: 5px 10px;
+    width: 100%;
+    text-align: left;
+}
+
+.top-italy-azerbaijan-university button h1 {
+    font-size: 40px;
+    line-height: normal;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.bottom-of-top-italy {
+    background-color: #336178;
+    opacity: 0.9;
+    padding: 12px 0;
+    width: 100%;
+    margin-top: 10px;
+    position: relative;
+    top: -64px;
+}
+
+.breadcrumb-nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.breadcrumb-nav span {
+    color: #fff;
+}
+
+.breadcrumb-nav .breadcrumb-link {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.breadcrumb-nav .breadcrumb-link:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb-nav .active {
+    font-weight: 600;
+}
+
+.breadcrumb-nav .arrow-icon {
+    font-size: 12px;
+    color: #fff;
+}
+
+.background-img {
+    width: 100%;
+    min-height: 500px;
+    background-image: url('https://www.ada.edu.az/media/2024/10/25/website_slider_italy_azerbaijan.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

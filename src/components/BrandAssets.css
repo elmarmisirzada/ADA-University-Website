@@ -1,0 +1,102 @@
+.brand-assets-total {
+    padding: 60px 0;
+    background-color: var(--bg-primary);
+    transition: background-color 0.3s ease;
+}
+
+.container h4{
+    color: var(--button-bg)!important;
+    font-size: 24px;
+    margin: 0 0 14px;
+    font-weight: 700;
+    line-height: 120%;
+    transition: color 0.3s ease;
+}
+
+.university-logo-text{
+    color: #ae485e!important;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 17px;
+}
+
+.download-text{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #336178;
+}
+
+.texts{
+    display: flex;
+    gap: 30px;
+}
+
+.brand-photos p{
+    line-height: 30px;
+    font-style: normal;
+    color: var(--text-secondary);
+    margin-top: 0;
+    font-size: 18px;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+}
+
+.third-assets h6{
+    color: var(--text-secondary);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 17px;
+    text-align: left;
+    width: 100%;
+    transition: color 0.3s ease;
+}
+
+.caspian-blue p, .white p, .pomegranate p{
+    color: var(--text-primary);
+    transition: color 0.3s ease;
+}
+
+.caspian-blue button{
+    color: #fff;
+    background: #336178;
+    border: 1px solid #336178;
+    padding: 8px 25px;
+    cursor: text;
+    min-width: 100px;
+    text-align: center;
+    outline: none;
+}
+
+.white button{
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #d7d7d7;
+    padding: 8px 25px;
+    cursor: text;
+    min-width: 100px;
+    text-align: center;
+    outline: none;
+}
+
+.pomegranate button{
+    color: #fff;
+    background: #ae485e;
+    border: 1px solid #ae485e;
+    padding: 8px 25px;
+    cursor: text;
+    min-width: 100px;
+    text-align: center;
+    outline: none;
+}
+
+.third-assets{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 35px;
+}

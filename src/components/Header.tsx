@@ -1,7 +1,36 @@
-import React from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import './Header.css'
+import { IoSearch } from "react-icons/io5";
+import { MdDarkMode, MdLightMode } from "react-icons/md";
+import { useTheme } from '../context/ThemeContext';
 
 const Header:React.FC = () => {
+  const [searchOpen, setSearchOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState('');
+  const searchInputRef = useRef<HTMLInputElement>(null);
+  const { theme, toggleTheme } = useTheme();
+
+  useEffect(() => {
+    if (searchOpen && searchInputRef.current) {
+      searchInputRef.current.focus();
+    }
+  }, [searchOpen]);
+
+  const handleSearch = () => {
+    if (searchQuery.trim()) {
+      const found = (window as any).find(searchQuery);
+      if (!found) {
+        alert('No results found');
+      }
+    }
+  };
+
+  const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === 'Enter') {
+      handleSearch();
+    }
+  };
+
   return (
     <div className='header-wrapper'>
       <div className='total-header'>
@@ -19,7 +48,7 @@ const Header:React.FC = () => {
               <ul className="dropdown-menu">
                 <li><a className="dropdown-item" href="#">Leadership & Governance</a></li>
                 <li><a className="dropdown-item" href="/ada-university">ADA University</a></li>
-                <li><a className="dropdown-item" href="#">Italy-Azerbaijan University</a></li>
+                <li><a className="dropdown-item" href="/italy-azerbaijan-university">Italy-Azerbaijan University</a></li>
                 <li><a className="dropdown-item" href="#">Accreditations and Rankings</a></li>
                 <li><a className="dropdown-item" href="#">Campus</a></li>
                 <li><a className="dropdown-item" href="#">Strategic Plan</a></li>
@@ -94,6 +123,42 @@ const Header:React.FC = () => {
                 <li><a className="dropdown-item" href="#">ADA High School</a></li>
               </ul>
             </div>
+
+            {searchOpen && (
+              <div className="search-input-container ms-2">
+                <input
+                  ref={searchInputRef}
+                  type="text"
+                  className="form-control search-input"
+                  placeholder="Search..."
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  onKeyPress={handleKeyPress}
+                />
+              </div>
+            )}
+
+            <button 
+              className="btn btn-light ms-2 search-button"
+              onClick={() => {
+                if (searchOpen && searchQuery) {
+                  handleSearch();
+                } else {
+                  setSearchOpen(!searchOpen);
+                  setSearchQuery('');
+                }
+              }}
+            >
+              <IoSearch size={20} />
+            </button>
+
+            <button 
+              className="btn btn-light ms-2 theme-toggle-button"
+              onClick={toggleTheme}
+              title={theme === 'light' ? 'Switch to Dark Mode' : 'Switch to Light Mode'}
+            >
+              {theme === 'light' ? <MdDarkMode size={20} /> : <MdLightMode size={20} />}
+            </button>
           </div>
         </div>
       </div>

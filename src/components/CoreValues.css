@@ -1,0 +1,126 @@
+.core-total {
+    padding: 60px 0;
+    background-color: var(--bg-primary);
+    transition: background-color 0.3s ease;
+}
+
+.core-total .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.core-selection button {
+    width: 100%;
+    padding: 50px 60px;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    cursor: default;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.core-four-part .row {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.core-four-part .col-3 {
+    flex: 1;
+}
+
+.core-four-part h2 {
+    color: var(--button-bg);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 120%;
+    margin-bottom: 25px;
+    text-align: left;
+    transition: color 0.3s ease;
+}
+
+.core-four-part p {
+    color: var(--text-primary);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    vertical-align: middle;
+    line-height: normal;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: left;
+    transition: color 0.3s ease;
+}
+
+.core-four-part p svg {
+    flex-shrink: 0;
+    font-size: 18px;
+}
+
+.information {
+    margin-top: 20px;
+}
+
+.information button {
+    width: 100%;
+    padding: 40px 60px;
+    background-color: #ae485e;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+    cursor: default;
+}
+
+.information button p {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+    margin: 0;
+    text-align: left;
+}
+
+.brand h2 {
+    color: var(--button-bg) !important;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 120%;
+    margin-bottom: 30px;
+    transition: color 0.3s ease;
+}
+
+.brand{
+    margin-top: 50px;
+}
+
+.brand p {
+    line-height: 30px;
+    font-style: normal;
+    color: var(--text-secondary);
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.blue-text {
+    background-color: #336178;
+    color: white;
+    padding: 2px 6px;
+}
+
+.white-text {
+    background-color: #ffffff;
+    color: black;
+    padding: 2px 6px;
+    border: 1px solid #ddd;
+}
+
+.red-text {
+    background-color: #ae485e;
+    color: white;
+    padding: 2px 6px;
+}
+
