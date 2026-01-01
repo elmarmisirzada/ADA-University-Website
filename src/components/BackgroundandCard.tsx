@@ -17,13 +17,23 @@ interface propertiesOfInfo {
 const BackgroundandCard: React.FC = () => {
   const [information, setInformation] = useState<propertiesOfInfo[]>([])
   const [showCards, setShowCards] = useState(false)
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState<string | null>(null)
   const cardsRef = useRef<HTMLDivElement>(null)
   const lastScrollY = useRef(0)
 
   useEffect(() => {
+    setLoading(true)
     axios.get('/assets/cards.json')
-      .then(res => setInformation(res.data))
-      .catch(err => console.log(err))
+      .then(res => {
+        setInformation(res.data)
+        setLoading(false)
+      })
+      .catch(err => {
+        console.log(err)
+        setError('Error loading data')
+        setLoading(false)
+      })
   }, [])
 
   useEffect(() => {
@@ -54,29 +64,39 @@ const BackgroundandCard: React.FC = () => {
   return (
     <div className="bg-card-container">
       <div className={`total-car ${showCards ? 'cards-visible' : ''}`} ref={cardsRef}>
-        <Swiper
-          navigation={true}
-          modules={[Navigation]}
-          className="menimSwiper"
-          slidesPerView={3}
-          spaceBetween={30}
-          breakpoints={{
-            320: { slidesPerView: 1, spaceBetween: 20 },
-            768: { slidesPerView: 2, spaceBetween: 10 },
-            1024: { slidesPerView: 5, spaceBetween: 25 },
-          }}
-        >
-          {information.map((info, idx) => (
-            <SwiperSlide key={idx}>
-              <OneBackground
-                image={info.image}
-                title={info.title}
-                description={info.description}
-                readMore={info.readMore}
-              />
-            </SwiperSlide>
-          ))}
-        </Swiper>
+        {loading ? (
+          <div className="loading-container">
+            <p>Loading...</p>
+          </div>
+        ) : error ? (
+          <div className="error-container">
+            <p>{error}</p>
+          </div>
+        ) : (
+          <Swiper
+            navigation={true}
+            modules={[Navigation]}
+            className="menimSwiper"
+            slidesPerView={3}
+            spaceBetween={30}
+            breakpoints={{
+              320: { slidesPerView: 1, spaceBetween: 20 },
+              768: { slidesPerView: 2, spaceBetween: 10 },
+              1024: { slidesPerView: 5, spaceBetween: 25 },
+            }}
+          >
+            {information.map((info, idx) => (
+              <SwiperSlide key={idx}>
+                <OneBackground
+                  image={info.image}
+                  title={info.title}
+                  description={info.description}
+                  readMore={info.readMore}
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        )}
       </div>
 
       <div className="backgroundvideo">

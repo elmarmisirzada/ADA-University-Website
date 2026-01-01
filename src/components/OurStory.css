@@ -1,32 +1,36 @@
 .our-story-total {
     position: relative;
-    background-color: #fff;
+    background-color: var(--bg-primary);
     padding: 60px 0;
     z-index: 1;
+    transition: background-color 0.3s ease;
 }
 
 .our-story-total h1 {
-font-size: 48px;
-    color: #336178;
+    font-size: 48px;
+    color: var(--button-bg);
     margin-bottom: 30px;
     font-weight: 700;
     line-height: 120%;
+    transition: color 0.3s ease;
 }
 
 .our-story-total p {
     line-height: 30px;
     font-style: normal;
-    color: #292929;
+    color: var(--text-secondary);
     font-size: 18px;
     margin-bottom: 20px;
+    transition: color 0.3s ease;
 }
 
 .our-story-total a {
-    color: #336178;
+    color: var(--button-bg);
     text-decoration: underline;
     font-weight: 500;
+    transition: color 0.3s ease;
 }
 
 .our-story-total a:hover {
-    color: #274c5e;
+    color: var(--accent-color);
 }

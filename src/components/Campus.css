@@ -1,0 +1,55 @@
+.total-campus {
+    padding: 40px 0 0 0;
+    background-color: var(--bg-primary);
+    transition: background-color 0.3s ease;
+    margin-bottom: 100px;
+    
+}
+
+.total-campus .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.campus-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.campus-buttons button {
+    flex: 1;
+    max-width: 650px;
+    padding: 30px 30px;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+
+.campus-buttons button:first-child {
+    background-color: #336178;
+}
+
+.campus-buttons button:last-child {
+    background-color: #ae485e;
+}
+
+.campus-buttons button h2 {
+    color: white;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.campus-buttons button p {
+    color: white;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+}
+

@@ -1,0 +1,15 @@
+.aboutus-italy h2{
+    color: #336178!important;
+        font-size: 48px;
+        font-weight: 700;
+    line-height: 120%;
+}
+
+.aboutus-italy p{
+    line-height: 30px;
+    font-style: normal;
+    color: #292929;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
