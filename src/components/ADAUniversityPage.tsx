@@ -35,6 +35,9 @@ const ADAUniversityPage: React.FC = () => {
         </div>
       </div>
       <OurStory />
+      <MissionandVision />
+      <CoreValues />
+      <BrandAssets />
     </div>
   )
 }
