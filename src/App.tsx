@@ -15,6 +15,7 @@ import Experience from './components/Experience'
 import ADAUniversityPage from './components/ADAUniversityPage'
 import ItalyAzerbaijanUniversity from './components/ItalyAzerbaijanUniversity'
 import NewsEventsPage from './components/NewsEventsPage'
+import ITEngineering from './components/ITEngineering'
 function App() {
   
 
@@ -38,6 +39,7 @@ function App() {
         <Route path="/ada-university" element={<ADAUniversityPage />} />
         <Route path="/italy-azerbaijan-university" element={<ItalyAzerbaijanUniversity />} />
         <Route path="/news-events" element={<NewsEventsPage />} />
+        <Route path="/it-engineering" element={<ITEngineering />} />
       </Routes>
       <Footer/>
     </Router>

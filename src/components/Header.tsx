@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import './Header.css'
 import { IoSearch } from "react-icons/io5";
 import { MdDarkMode, MdLightMode } from "react-icons/md";
@@ -92,7 +93,7 @@ const Header:React.FC = () => {
                 <li><a className="dropdown-item" href="#">College</a></li>
                 <li><a className="dropdown-item" href="#">Public & International Affairs</a></li>
                 <li><a className="dropdown-item" href="#">Business</a></li>
-                <li><a className="dropdown-item" href="#">IT & Engineering</a></li>
+                <li><Link className="dropdown-item" to="/it-engineering">IT & Engineering</Link></li>
                 <li><a className="dropdown-item" href="#">Education</a></li>
                 <li><a className="dropdown-item" href="#">Law</a></li>
                 <li><a className="dropdown-item" href="#">Agricultural & Food Sciences</a></li>

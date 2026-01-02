@@ -1,0 +1,75 @@
+.engineering-total {
+    margin-top: 25px;
+}
+
+.top-engineering h2 {
+    color: #336178;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.top-engineering p {
+    line-height: 30px;
+    font-style: normal;
+    color: #292929;
+    font-size: 18px;
+    margin-top: 25px;
+}
+
+.middle-engineering {
+    background-color: #f5f5f5;
+    padding: 30px 0;
+}
+
+.engineering-percentage {
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.first-percentage,
+.second-percentage {
+    text-align: left;
+    padding: 30px  20px;
+}
+
+.undergraduate,
+.graduate,
+.alumni {
+    margin-bottom: 50px;
+}
+
+.sekil-faiz {
+    justify-content: flex-start;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.first-percentage h1,
+.first-percentage h4 {
+    color: #AE485E !important;
+}
+
+.first-percentage img {
+    filter: brightness(0) saturate(100%) invert(38%) sepia(47%) saturate(1000%) hue-rotate(310deg) brightness(95%) contrast(85%);
+}
+
+.second-percentage h1,
+.second-percentage h4 {
+    color: #336178 !important;
+}
+
+.second-percentage img {
+    filter: brightness(0) saturate(100%) invert(28%) sepia(27%) saturate(1149%) hue-rotate(151deg) brightness(93%) contrast(88%);
+}
+
+.first-percentage h1, .second-percentage h1 {
+    font-family: "Urbanist", sans-serif;
+    font-size: 74px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 51px;
+    gap: 2px;
+
+}
