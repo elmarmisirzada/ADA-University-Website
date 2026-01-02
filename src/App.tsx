@@ -14,6 +14,7 @@ import NewEvents from './components/NewEvents'
 import Experience from './components/Experience'
 import ADAUniversityPage from './components/ADAUniversityPage'
 import ItalyAzerbaijanUniversity from './components/ItalyAzerbaijanUniversity'
+import NewsEventsPage from './components/NewsEventsPage'
 function App() {
   
 
@@ -36,6 +37,7 @@ function App() {
         } />
         <Route path="/ada-university" element={<ADAUniversityPage />} />
         <Route path="/italy-azerbaijan-university" element={<ItalyAzerbaijanUniversity />} />
+        <Route path="/news-events" element={<NewsEventsPage />} />
       </Routes>
       <Footer/>
     </Router>

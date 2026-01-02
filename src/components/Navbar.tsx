@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './Navbar.css'
 
 const Navbar: React.FC = () => {
@@ -10,7 +11,7 @@ const Navbar: React.FC = () => {
       <div className="navbar-nav ms-auto">
         <a className="nav-link" aria-current="page" href="#">Library</a>
         <a className="nav-link" href="#">Centers and Institutes</a>
-        <a className="nav-link" href="#">News & Events</a>
+        <Link className="nav-link" to="/news-events">News & Events</Link>
         <a className="nav-link" href="true">ADA Foundation</a>
                 <a className="nav-link" href="true">Career@ADA</a>
                         <a className="nav-link" href="true">MyADA</a>

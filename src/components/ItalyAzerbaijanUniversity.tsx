@@ -11,7 +11,7 @@ const ItalyAzerbaijanUniversity: React.FC = () => {
     <><div className="total-italy-azerbaijan-university">
           <div className="image-background">
               <img src="https://www.ada.edu.az/media/2024/10/25/website_slider_italy_azerbaijan.jpg" alt="Italy-Azerbaijan University" className="background-image" />
-              <div className="image-overlay"></div>
+              
           </div>
           <div className="top-italy-azerbaijan-university">
               <div className="container">
