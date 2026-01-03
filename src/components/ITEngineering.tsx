@@ -4,6 +4,8 @@ import { FaArrowRightLong } from 'react-icons/fa6'
 import { Link } from 'react-router-dom'
 import SchoolEngineering from './SchoolEngineering'
 import EngineeringPrograms from './EngineeringPrograms'
+import EngineeringDean from './EngineeringDean'
+import MeetEngineeringFaculty from './MeetEngineeringFaculty'
 
 const ITEngineering: React.FC = () => {
   return (
@@ -32,6 +34,8 @@ const ITEngineering: React.FC = () => {
 
       <SchoolEngineering />
       <EngineeringPrograms />
+      <EngineeringDean />
+      <MeetEngineeringFaculty />
     </div>
   )
 }

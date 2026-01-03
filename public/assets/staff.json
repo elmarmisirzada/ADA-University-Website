@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "Aydan Aghayeva",
+    "position": "Career Advisor, SITE",
+    "school": "",
+    "image": "https://www.ada.edu.az/media/2024/09/10/1to1_medium/5aebbc00_d52f_49e2_af51_1d8def12376d.jfif",
+    "link": "https://www.ada.edu.az/en/schools/site/members/staff-members/86-aydan-aghayeva"
+  },
+  {
+    "id": 2,
+    "name": "Fidan Guvvatli",
+    "position": "Graduate Academic Advisor",
+    "school": "",
+    "image": "https://www.ada.edu.az/media/2024/05/31/1to1_medium/fidan_guvvatli.jpg",
+    "link": "https://www.ada.edu.az/en/schools/site/members/staff-members/81-fidan-guvvatli"
+  },
+  {
+    "id": 3,
+    "name": "Gunel Mukhtarova",
+    "position": "Undergraduate and Graduate Admission Counselor, SITE",
+    "school": "",
+    "image": "https://www.ada.edu.az/media/2024/05/31/1to1_medium/gunel_mukhtarova.jpg",
+    "link": "https://www.ada.edu.az/en/schools/site/members/staff-members/84-gunel-mukhtarova"
+  },
+  {
+    "id": 4,
+    "name": "Jamila Guliyeva",
+    "position": "Project Assistant",
+    "school": "",
+    "image": "https://www.ada.edu.az/media/2024/05/31/1to1_medium/jamila_guliyeva.jpg",
+    "link": "https://www.ada.edu.az/en/schools/site/members/staff-members/85-jamila-guliyeva"
+  },
+  {
+    "id": 5,
+    "name": "Kamala Hashimova",
+    "position": "Undergraduate Academic Advisor",
+    "school": "Computer Sciences",
+    "image": "https://www.ada.edu.az/media/2025/07/25/1to1_medium/kamala_hashimova_2_1_.jpg",
+    "link": "https://www.ada.edu.az/en/schools/site/members/staff-members/392-kamala-hashimova"
+  },
+  {
+    "id": 6,
+    "name": "Turkan Huseynova",
+    "position": "Undergraduate Academic Advisor, BSCS",
+    "school": "",
+    "image": "https://www.ada.edu.az/media/2025/07/11/1to1_medium/turkan_huseynova.jpg",
+    "link": "https://www.ada.edu.az/en/schools/site/members/staff-members/443-turkan-huseynova"
+  },
+  {
+    "id": 7,
+    "name": "Aysun Mustafazada",
+    "position": "Undergraduate Academic Advisor",
+    "school": "Computer Engineering & Electrical and Electronic Engineering",
+    "image": "https://www.ada.edu.az/media/2025/12/11/1to1_medium/aysun_mustafazada.jpg",
+    "link": ""
+  }
+]

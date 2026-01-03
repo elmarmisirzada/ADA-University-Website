@@ -1,0 +1,226 @@
+[
+  {
+    "id": 1,
+    "name": "Abzatdin Adamov",
+    "position": "Dean",
+    "school": "School of IT and Engineering",
+    "image": "https://www.ada.edu.az/media/2024/05/31/1to1_medium/abzatdin_adamov.jpg",
+    "link": "https://www.ada.edu.az/en/schools/site/members/faculty/55-abzatdin-adamov"
+  },
+  {
+    "id": 2,
+    "name": "Vugar Musayev",
+    "position": "Assistant Professor, Associate Dean, Academic Affairs",
+    "school": "Mathematics and Statistics",
+    "image": "https://www.ada.edu.az/media/2024/05/31/1to1_medium/vugar_musayev.jpg",
+    "link": "https://www.ada.edu.az/en/schools/site/members/faculty/67-vugar-musayev"
+  },
+  {
+    "id": 3,
+    "name": "Jamaladdin Hasanov",
+    "position": "Associate Professor, Director of BSIT Program",
+    "school": "Computer and Information Sciences",
+    "image": "https://www.ada.edu.az/media/2024/05/31/1to1_medium/jamaladdin_hasanov.jpg",
+    "link": "https://www.ada.edu.az/en/schools/site/members/faculty/63-jamaladdin-hasanov"
+  },
+  {
+    "id": 4,
+    "name": "Samir Rustamov",
+    "position": "Associate Professor, Director of BSCS Program",
+    "school": "Computer and Information Sciences",
+    "image": "https://www.ada.edu.az/media/2024/05/31/1to1_medium/samir_rustamov.jpg",
+    "link": "https://www.ada.edu.az/en/schools/site/members/faculty/57-samir-rustamov"
+  },
+  {
+    "id": 5,
+    "name": "Wisam Al-Dayyeni",
+    "position": "Professor, Electrical Engineering, Program director of CE, EEE.",
+    "school": "Electrical Engineering",
+    "image": "https://www.ada.edu.az/media/2024/10/09/1to1_medium/ada_picture_v2.jpg",
+    "link": "https://www.ada.edu.az/en/schools/site/members/faculty/70-wisam-al-dayyeni"
+  },
+  {
+    "id": 6,
+    "name": "Yagub Aliyev",
+    "position": "Associate Professor, Program Director of Mathematics, Mathematics and Statistics",
+    "school": "Mathematics and Statistics",
+    "image": "https://www.ada.edu.az/media/2025/01/13/1to1_medium/yagub_aliyev.jpg",
+    "link": "https://www.ada.edu.az/en/schools/site/members/faculty/68-yagub-aliyev"
+  },
+  {
+    "id": 7,
+    "name": "Araz Yusubov",
+    "position": "Assistant Professor",
+    "school": "Computer and Information Sciences",
+    "image": "https://www.ada.edu.az/media/2024/05/31/1to1_medium/araz_yusubov.jpg",
+    "link": "https://www.ada.edu.az/en/schools/site/members/faculty/58-araz-yusubov"
+  },
+  {
+    "id": 8,
+    "name": "Burcu Ramazanli",
+    "position": "Assistant Professor",
+    "school": "Engineering",
+    "image": "https://www.ada.edu.az/media/2024/05/31/1to1_medium/burcu_ramazanli.jpg",
+    "link": "https://www.ada.edu.az/en/schools/site/members/faculty/59-burcu-ramazanli"
+  },
+  {
+    "id": 9,
+    "name": "Elchin Hasanalizade",
+    "position": "Assistant Professor",
+    "school": "Mathematics",
+    "image": "https://www.ada.edu.az/media/2024/05/31/1to1_medium/elchin_hasanalizada.jpg",
+    "link": "https://www.ada.edu.az/en/schools/site/members/faculty/60-elchin-hasanalizade"
+  },
+  {
+    "id": 10,
+    "name": "Fuad Hajiyev",
+    "position": "Assistant Professor",
+    "school": "Mathematics",
+    "image": "https://www.ada.edu.az/media/2025/01/10/1to1_medium/fuad_hajiyev.jpg",
+    "link": "https://www.ada.edu.az/en/schools/site/members/faculty/61-fuad-hajiyev"
+  },
+  {
+    "id": 11,
+    "name": "Gulmammad Mammadov",
+    "position": "Assistant Professor",
+    "school": "Physics",
+    "image": "https://www.ada.edu.az/media/2024/05/31/1to1_medium/gulmammad_mammadov.jpg",
+    "link": "https://www.ada.edu.az/en/schools/site/members/faculty/62-gulmammad-mammadov"
+  },
+  {
+    "id": 12,
+    "name": "Javanshir Azizov",
+    "position": "Assistant Professor",
+    "school": "Mathematics",
+    "image": "https://www.ada.edu.az/media/2025/01/10/1to1_medium/javanshir_azizov.jpg",
+    "link": "https://www.ada.edu.az/en/schools/site/members/faculty/73-javanshir-azizov"
+  },
+  {
+    "id": 13,
+    "name": "John Thomas Burns",
+    "position": "Assistant Professor",
+    "school": "Computer and Information Sciences",
+    "image": "https://www.ada.edu.az/media/2025/01/14/1to1_medium/john_thomas_burns.jpg",
+    "link": "https://www.ada.edu.az/en/schools/site/members/faculty/375-john-thomas-burns"
+  },
+  {
+    "id": 14,
+    "name": "Mykhailo Medvediev",
+    "position": "Assistant Professor",
+    "school": "Computer and Information Sciences",
+    "image": "https://www.ada.edu.az/media/2024/05/31/1to1_medium/mykhailo_medvediev.jpg",
+    "link": "https://www.ada.edu.az/en/schools/site/members/faculty/64-mykhailo-medvediev"
+  },
+  {
+    "id": 15,
+    "name": "Orkhan Karimzada",
+    "position": "Assistant Professor",
+    "school": "Electrical Engineering",
+    "image": "https://www.ada.edu.az/media/2025/01/10/1to1_medium/orkhan_karimzada.jpg",
+    "link": "https://www.ada.edu.az/en/schools/site/members/faculty/66-orkhan-karimzada"
+  },
+  {
+    "id": 16,
+    "name": "Rashad Aliyev",
+    "position": "Assistant Professor",
+    "school": "Computer and Information Science",
+    "image": "https://www.ada.edu.az/media/2025/02/21/1to1_medium/photo_2025_02_20_15_10_00.jpg",
+    "link": "https://www.ada.edu.az/en/schools/site/members/faculty/372-rashad-aliyev"
+  },
+  {
+    "id": 17,
+    "name": "Samin Malik",
+    "position": "Assistant Professor",
+    "school": "Mathematics",
+    "image": "https://www.ada.edu.az/media/2025/01/10/1to1_medium/samin_malik.jpg",
+    "link": "https://www.ada.edu.az/en/schools/site/members/faculty/65-samin-malik"
+  },
+  {
+    "id": 18,
+    "name": "Rafail Alizade",
+    "position": "Associate Professor",
+    "school": "Mathematics",
+    "image": "https://www.ada.edu.az/media/2025/01/10/1to1_medium/rafail_alizada.jpg",
+    "link": "https://www.ada.edu.az/en/schools/site/members/faculty/56-rafail-alizade"
+  },
+  {
+    "id": 19,
+    "name": "Ismayil Shahaliyev",
+    "position": "Instructor",
+    "school": "Information and Computer Sciences",
+    "image": "https://www.ada.edu.az/media/2024/05/31/1to1_medium/ismayil_shahaliyev.jpg",
+    "link": "https://www.ada.edu.az/en/schools/site/members/faculty/72-ismayil-shahaliyev"
+  },
+  {
+    "id": 20,
+    "name": "Nuraddin Sadili",
+    "position": "Instructor",
+    "school": "Computer and Information Sciences",
+    "image": "https://www.ada.edu.az/media/2024/05/31/1to1_medium/nuraddin_sadili.jpg",
+    "link": "https://www.ada.edu.az/en/schools/site/members/faculty/76-nuraddin-sadili"
+  },
+  {
+    "id": 21,
+    "name": "Orkhan Mammadov",
+    "position": "Instructor",
+    "school": "Computer and Information Sciences",
+    "image": "https://www.ada.edu.az/media/2025/01/15/1to1_medium/orkhan_mammadov-1.jpg",
+    "link": "https://www.ada.edu.az/en/schools/site/members/faculty/373-orkhan-mammadov"
+  },
+  {
+    "id": 22,
+    "name": "Pasha Pashazade",
+    "position": "Instructor",
+    "school": "Computer Engineering",
+    "image": "https://www.ada.edu.az/media/2024/05/31/1to1_medium/pasha_pashazade.jpg",
+    "link": "https://www.ada.edu.az/en/schools/site/members/faculty/77-pasha-pashazade"
+  },
+  {
+    "id": 23,
+    "name": "Samir Mammadov",
+    "position": "Instructor",
+    "school": "Computer and Information Sciences",
+    "image": "https://www.ada.edu.az/assets/img/content/schools-it/member24.jpeg",
+    "link": "https://www.ada.edu.az/en/schools/site/members/faculty/78-samir-mammadov"
+  },
+  {
+    "id": 24,
+    "name": "Ruslan Muslumov",
+    "position": "Assistant Professor",
+    "school": "Mathematics",
+    "image": "https://www.ada.edu.az/media/2025/10/09/1to1_medium/ruslan_muslumov.jpg",
+    "link": "https://www.ada.edu.az/en/schools/site/members/faculty/469-ruslan-muslumov"
+  },
+  {
+    "id": 25,
+    "name": "Said Pashayev",
+    "position": "Assistant Professor",
+    "school": "Physics",
+    "image": "https://www.ada.edu.az/media/2025/12/11/1to1_medium/said_pashayev.jpg",
+    "link": "https://www.ada.edu.az/en/schools/site/members/faculty/480-said-pashayev"
+  },
+  {
+    "id": 26,
+    "name": "Natig Atakishiyev",
+    "position": "Professor",
+    "school": "Mathematics",
+    "image": "https://www.ada.edu.az/media/2025/12/11/1to1_medium/natig_atakishiyev.jpg",
+    "link": "https://www.ada.edu.az/en/schools/site/members/faculty/481-natig-atakishiyev"
+  },
+  {
+    "id": 27,
+    "name": "Alexz Farrall",
+    "position": "Assistant Professor",
+    "school": "Computer Engineering",
+    "image": "https://www.ada.edu.az/media/2025/12/12/1to1_medium/alexz_farraii.jpg",
+    "link": "https://www.ada.edu.az/en/schools/site/members/faculty/483-alexz-farrall"
+  },
+  {
+    "id": 28,
+    "name": "Azar Aliyev",
+    "position": "Instructor",
+    "school": "",
+    "image": "https://www.ada.edu.az/media/2025/12/12/1to1_medium/azar_aliyev.jpg",
+    "link": "https://www.ada.edu.az/en/schools/site/members/faculty/484-azar-aliyev"
+  }
+]
