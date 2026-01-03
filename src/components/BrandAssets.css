@@ -4,7 +4,7 @@
     transition: background-color 0.3s ease;
 }
 
-.container h4{
+.brand-assets-total .container h4{
     color: var(--button-bg)!important;
     font-size: 24px;
     margin: 0 0 14px;

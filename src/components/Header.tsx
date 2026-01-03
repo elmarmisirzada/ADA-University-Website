@@ -64,7 +64,7 @@ const Header:React.FC = () => {
               </button>
               <ul className="dropdown-menu">
                 <li><a className="dropdown-item" href="#">Find your Program</a></li>
-                <li><a className="dropdown-item" href="#">Undergraduate</a></li>
+                <li><Link className="dropdown-item" to="/undergraduate">Undergraduate</Link></li>
                 <li><a className="dropdown-item" href="#">Graduate</a></li>
                 <li><a className="dropdown-item" href="#">International</a></li>
                 <li><a className="dropdown-item" href="#">Financial Aid</a></li>
