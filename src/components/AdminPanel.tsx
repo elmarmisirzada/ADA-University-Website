@@ -4,7 +4,7 @@ import './AdminPanel.css'
 type NewsEventType = 'news' | 'event'
 
 interface NewsEventItem {
-  id: number
+  id: string | number
   type: NewsEventType
   category: string
   title: string
@@ -25,7 +25,7 @@ const AdminPanel: React.FC = () => {
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
 
-  const [selectedId, setSelectedId] = useState<number | null>(null)
+  const [selectedId, setSelectedId] = useState<string | number | null>(null)
   const [draft, setDraft] = useState(emptyDraft)
 
   const selected = useMemo(() => items.find((x) => x.id === selectedId) ?? null, [items, selectedId])
@@ -92,7 +92,7 @@ const AdminPanel: React.FC = () => {
     }
   }
 
-  async function deleteItem(id: number) {
+  async function deleteItem(id: string | number) {
     setError(null)
     try {
       const res = await fetch(`/api/newsEvents/${id}`, { method: 'DELETE' })

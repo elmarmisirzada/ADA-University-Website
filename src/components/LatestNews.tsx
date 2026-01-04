@@ -2,24 +2,23 @@ import React, { useEffect, useState } from 'react'
 import './LatestNews.css'
 import { IoLayers } from "react-icons/io5"
 import { FaArrowRight } from "react-icons/fa"
-
-interface NewsEvent {
-  id?: number
-  type?: 'news' | 'event'
-  category: string
-  title: string
-  image: string
-  link: string
-}
+import { loadNewsEvents, type NewsEventItem } from '../api/newsEvents'
 
 const LatestNews: React.FC = () => {
-  const [newsEvents, setNewsEvents] = useState<NewsEvent[]>([])
+  const [newsEvents, setNewsEvents] = useState<NewsEventItem[]>([])
 
   useEffect(() => {
-    fetch(`${import.meta.env.BASE_URL}assets/news-events.json`)
-      .then(response => response.json())
-      .then(data => setNewsEvents(data))
-      .catch(error => console.error('Error loading news events:', error))
+    let cancelled = false
+
+    loadNewsEvents()
+      .then((data) => {
+        if (!cancelled) setNewsEvents(data)
+      })
+      .catch((error) => console.error('Error loading news events:', error))
+
+    return () => {
+      cancelled = true
+    }
   }, [])
 
   const onlyNews = newsEvents.filter((x) => x.type === 'news' || x.type == null)

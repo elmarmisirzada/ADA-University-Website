@@ -1,12 +1,3 @@
 {
-  "newsEvents": [
-    {
-      "id": "479",
-      "type": "event",
-      "category": "Admission",
-      "title": "“Legal Talks” with Lawyer",
-      "image": "https://www.ada.edu.az/media/2024/10/15/huquqsohbetleri_inara_camal_website_1_.jpg",
-      "link": "https://www.ada.edu.az/en/events/479--legal-talks-with-lawyer"
-    }
-  ]
+  "newsEvents": []
 }

@@ -2,24 +2,23 @@ import React, { useEffect, useState } from 'react'
 import './LatestEvents.css'
 import { IoLayers } from "react-icons/io5"
 import { FaArrowRight } from "react-icons/fa"
-
-interface Event {
-  id?: number
-  type?: 'news' | 'event'
-  category: string
-  title: string
-  image: string
-  link: string
-}
+import { loadNewsEvents, type NewsEventItem } from '../api/newsEvents'
 
 const LatestEvents: React.FC = () => {
-  const [events, setEvents] = useState<Event[]>([])
+  const [events, setEvents] = useState<NewsEventItem[]>([])
 
   useEffect(() => {
-    fetch(`${import.meta.env.BASE_URL}assets/news-events.json`)
-      .then(response => response.json())
-      .then(data => setEvents(data))
-      .catch(error => console.error('Error loading events:', error))
+    let cancelled = false
+
+    loadNewsEvents()
+      .then((data) => {
+        if (!cancelled) setEvents(data)
+      })
+      .catch((error) => console.error('Error loading events:', error))
+
+    return () => {
+      cancelled = true
+    }
   }, [])
 
   const onlyEvents = events.filter((x) => x.type === 'event' || x.link?.includes('/events/'))
