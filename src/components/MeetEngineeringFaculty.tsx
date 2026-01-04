@@ -15,12 +15,12 @@ const MeetEngineeringFaculty: React.FC = () => {
   const [staff, setStaff] = useState<Faculty[]>([]);
 
   useEffect(() => {
-    fetch('/assets/faculty.json')
+    fetch(`${import.meta.env.BASE_URL}assets/faculty.json`)
       .then(response => response.json())
       .then(data => setFaculty(data))
       .catch(error => console.error('Error loading faculty data:', error));
 
-    fetch('/assets/staff.json')
+    fetch(`${import.meta.env.BASE_URL}assets/staff.json`)
       .then(response => response.json())
       .then(data => setStaff(data))
       .catch(error => console.error('Error loading staff data:', error));

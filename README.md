@@ -1,5 +1,29 @@
 # React + TypeScript + Vite
 
+## Submission
+
+GitHub Repository:
+https://github.com/SITE-ADA/final-project-10211_team_9
+
+Live Website (GitHub Pages):
+https://site-ada.github.io/final-project-10211_team_9/
+
+Note:
+json-server runs locally on localhost:3001
+
+## Run
+
+```bash
+npm install
+npm run dev
+```
+
+## Deploy (GitHub Pages)
+
+```bash
+npm run deploy
+```
+
 ## Bonus (Optional)
 
 ### 1) Automatic scraping (News & Events)

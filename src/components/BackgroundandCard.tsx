@@ -24,7 +24,7 @@ const BackgroundandCard: React.FC = () => {
 
   useEffect(() => {
     setLoading(true)
-    axios.get('/assets/cards.json')
+    axios.get(`${import.meta.env.BASE_URL}assets/cards.json`)
       .then(res => {
         setInformation(res.data)
         setLoading(false)

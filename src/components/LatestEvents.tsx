@@ -16,7 +16,7 @@ const LatestEvents: React.FC = () => {
   const [events, setEvents] = useState<Event[]>([])
 
   useEffect(() => {
-    fetch('/assets/news-events.json')
+    fetch(`${import.meta.env.BASE_URL}assets/news-events.json`)
       .then(response => response.json())
       .then(data => setEvents(data))
       .catch(error => console.error('Error loading events:', error))

@@ -48,8 +48,8 @@ const Header:React.FC = () => {
               </button>
               <ul className="dropdown-menu">
                 <li><a className="dropdown-item" href="#">Leadership & Governance</a></li>
-                <li><a className="dropdown-item" href="/ada-university">ADA University</a></li>
-                <li><a className="dropdown-item" href="/italy-azerbaijan-university">Italy-Azerbaijan University</a></li>
+                <li><Link className="dropdown-item" to="/ada-university">ADA University</Link></li>
+                <li><Link className="dropdown-item" to="/italy-azerbaijan-university">Italy-Azerbaijan University</Link></li>
                 <li><a className="dropdown-item" href="#">Accreditations and Rankings</a></li>
                 <li><a className="dropdown-item" href="#">Campus</a></li>
                 <li><a className="dropdown-item" href="#">Strategic Plan</a></li>
