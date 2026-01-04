@@ -40,13 +40,11 @@ const BackgroundandCard: React.FC = () => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY
       
-      // Yalnız aşağı scroll etdikdə yoxla
       if (currentScrollY > lastScrollY.current) {
         if (cardsRef.current) {
           const rect = cardsRef.current.getBoundingClientRect()
           const windowHeight = window.innerHeight
           
-          // Videonun sonuna çatanda kartları göstər
           if (rect.bottom <= windowHeight) {
             setShowCards(true)
           }

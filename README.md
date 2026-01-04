@@ -1,5 +1,35 @@
 # React + TypeScript + Vite
 
+## Bonus (Optional)
+
+### 1) Automatic scraping (News & Events)
+
+Scrapes https://www.ada.edu.az/en/news-and-events and writes the latest items to `public/assets/news-events.json`.
+
+```bash
+npm run scrape:news
+```
+
+### 2) Admin panel (json-server)
+
+Starts a local JSON API from `db.json` at `http://localhost:3001`.
+
+Terminal 1:
+
+```bash
+npm run api
+```
+
+Terminal 2:
+
+```bash
+npm run dev
+```
+
+Open the admin panel at: `http://localhost:5173/admin`
+
+Note: Vite proxies `/api/*` to `http://localhost:3001/*` during development.
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
@@ -21,23 +51,15 @@ export default defineConfig([
   {
     files: ['**/*.{ts,tsx}'],
     extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
       tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
       tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
       tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
     ],
     languageOptions: {
       parserOptions: {
         project: ['./tsconfig.node.json', './tsconfig.app.json'],
         tsconfigRootDir: import.meta.dirname,
       },
-      // other options...
     },
   },
 ])
@@ -46,7 +68,6 @@ export default defineConfig([
 You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
 ```js
-// eslint.config.js
 import reactX from 'eslint-plugin-react-x'
 import reactDom from 'eslint-plugin-react-dom'
 
@@ -55,10 +76,7 @@ export default defineConfig([
   {
     files: ['**/*.{ts,tsx}'],
     extends: [
-      // Other configs...
-      // Enable lint rules for React
       reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
       reactDom.configs.recommended,
     ],
     languageOptions: {
@@ -66,7 +84,6 @@ export default defineConfig([
         project: ['./tsconfig.node.json', './tsconfig.app.json'],
         tsconfigRootDir: import.meta.dirname,
       },
-      // other options...
     },
   },
 ])

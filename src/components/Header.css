@@ -55,7 +55,7 @@
 	transition: color 0.3s ease;
 }
 
-.search-button, .theme-toggle-button {
+.search-button, .theme-toggle-button, .admin-nav-button {
 	font-size: 16px;
 	color: var(--text-primary) !important;
 	background-color: transparent !important;
@@ -68,7 +68,7 @@
 	transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.search-button:hover, .theme-toggle-button:hover {
+.search-button:hover, .theme-toggle-button:hover, .admin-nav-button:hover {
 	background-color: var(--bg-secondary) !important;
 }
 

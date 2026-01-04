@@ -4,6 +4,8 @@ import { IoLayers } from "react-icons/io5"
 import { FaArrowRight } from "react-icons/fa"
 
 interface Event {
+  id?: number
+  type?: 'news' | 'event'
   category: string
   title: string
   image: string
@@ -14,14 +16,15 @@ const LatestEvents: React.FC = () => {
   const [events, setEvents] = useState<Event[]>([])
 
   useEffect(() => {
-    fetch('/assets/events.json')
+    fetch('/assets/news-events.json')
       .then(response => response.json())
       .then(data => setEvents(data))
       .catch(error => console.error('Error loading events:', error))
   }, [])
 
-  const firstThree = events.slice(0, 3)
-  const lastThree = events.slice(3, 6)
+  const onlyEvents = events.filter((x) => x.type === 'event' || x.link?.includes('/events/'))
+  const firstThree = onlyEvents.slice(0, 3)
+  const lastThree = onlyEvents.slice(3, 6)
 
   return (
     <div className="latest-events-total">

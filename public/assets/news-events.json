@@ -1,38 +1,98 @@
 [
-    {
-        "category": "Education",
-        "title": "ADA University Launches International Certificate Program in Strategic and AI-Supported Assessment",
-        "image": "https://www.ada.edu.az/media/2025/12/23/604245896_18438917626103018_837760399101567775_n.jpg",
-        "link": "https://www.ada.edu.az/en/news/728-ada-university-launches-international-certificate-program-in-strategic-and-ai-supported-assessment"
-    },
-    {
-        "category": "Design & Architecture",
-        "title": "ADA University's Newly Established Faculty of Design and Architecture Hosts Seminar Series within Urban Awareness Campaign",
-        "image": "https://www.ada.edu.az/media/2025/12/23/604245896_18438917626103018_837760399101567775_n.jpg",
-        "link": "https://www.ada.edu.az/en/news/727-ada-university-design-architecture-seminar"
-    },
-    {
-        "category": "General",
-        "title": "Commemorative Event Honoring National Leader Heydar Aliyev Held at George Washington University",
-        "image": "https://www.ada.edu.az/media/2025/12/23/599501422_883865447312747_5608468173990884845_n.jpg",
-        "link": "https://www.ada.edu.az/en/news/726-heydar-aliyev-commemorative-event"
-    },
-    {
-        "category": "Admission",
-        "title": "ADA University Hosts Delegation from Tsinghua Shenzhen International Graduate School",
-        "image": "https://www.ada.edu.az/media/2025/12/09/whatsapp_image_2025_12_09_at_11_01_06-1.jpeg",
-        "link": "https://www.ada.edu.az/en/news/725-open-door-days"
-    },
-    {
-        "category": "Alumni",
-        "title": "ADA University Hosts Alumni Forum in Berlin",
-        "image": "https://www.ada.edu.az/media/2025/12/02/whatsapp_image_2025_12_02_at_17_47_25_4_.jpeg",
-        "link": "https://www.ada.edu.az/en/news/724-public-administration-seminar"
-    },
-    {
-        "category": "Admission",
-        "title": "Berlin Hosts Presentation of Mir Jalal’s Short Story Collection Newly Translated into German",
-        "image": "https://www.ada.edu.az/media/2025/11/28/screenshot_2025_11_28_at_16_38_05.png",
-        "link": "https://www.ada.edu.az/en/news/723-master-of-laws-info-session"
-    }
+  {
+    "id": 728,
+    "type": "news",
+    "category": "Education",
+    "title": "ADA University Launches International Certificate Program in Strategic and AI-Supported Assessment",
+    "image": "https://www.ada.edu.az/media/2025/12/23/604245896_18438917626103018_837760399101567775_n.jpg",
+    "link": "https://www.ada.edu.az/en/news/728-ada-university-launches-international-certificate-program-in-strategic-and-ai-supported-assessment"
+  },
+  {
+    "id": 727,
+    "type": "news",
+    "category": "Design & Architecture",
+    "title": "ADA University’s Newly Established Faculty of Design and Architecture Hosts Seminar Series within Urban Awareness Campaign",
+    "image": "https://www.ada.edu.az/media/2025/12/23/604245896_18438917626103018_837760399101567775_n.jpg",
+    "link": "https://www.ada.edu.az/en/news/727-ada-university-s-newly-established-faculty-of-design-and-architecture-hosts-seminar-series-within-urban-awareness-campaign"
+  },
+  {
+    "id": 726,
+    "type": "news",
+    "category": "General",
+    "title": "Commemorative Event Honoring National Leader Heydar Aliyev Held at George Washington University",
+    "image": "https://www.ada.edu.az/media/2025/12/23/599501422_883865447312747_5608468173990884845_n.jpg",
+    "link": "https://www.ada.edu.az/en/news/726-commemorative-event-honoring-national-leader-heydar-aliyev-held-at-george-washington-university"
+  },
+  {
+    "id": 725,
+    "type": "news",
+    "category": "University",
+    "title": "ADA University Hosts Delegation from Tsinghua Shenzhen International Graduate School",
+    "image": "https://www.ada.edu.az/media/2025/12/09/whatsapp_image_2025_12_09_at_11_01_06-1.jpeg",
+    "link": "https://www.ada.edu.az/en/news/725-ada-university-hosts-delegation-from-tsinghua-shenzhen-international-graduate-school"
+  },
+  {
+    "id": 724,
+    "type": "news",
+    "category": "Alumni",
+    "title": "ADA University Hosts Alumni Forum in Berlin",
+    "image": "https://www.ada.edu.az/media/2025/12/02/whatsapp_image_2025_12_02_at_17_47_25_4_.jpeg",
+    "link": "https://www.ada.edu.az/en/news/724-ada-university-hosts-alumni-forum-in-berlin"
+  },
+  {
+    "id": 723,
+    "type": "news",
+    "category": "General",
+    "title": "Berlin Hosts Presentation of Mir Jalal’s Short Story Collection Newly Translated into German",
+    "image": "https://www.ada.edu.az/media/2025/11/28/screenshot_2025_11_28_at_16_38_05.png",
+    "link": "https://www.ada.edu.az/en/news/723-berlin-hosts-presentation-of-mir-jalal-s-short-story-collection-newly-translated-into-german"
+  },
+  {
+    "id": 484,
+    "type": "event",
+    "category": "Admission",
+    "title": "Açıq Qapı Günləri: ADA Universitetində sizi gözləyirik!",
+    "image": "https://www.ada.edu.az/media/2025/06/16/b7690832_28c3_447e_b9cd_691076955f2a.jpeg",
+    "link": "https://www.ada.edu.az/en/events/484-aciq-qapi-gunleri-ada-universitetinde-sizi-gozleyirik"
+  },
+  {
+    "id": 483,
+    "type": "event",
+    "category": "Admission",
+    "title": "Shaping Policies for Impact: Seminar on Public Administration & Policy Analysis",
+    "image": "https://www.ada.edu.az/media/2025/02/20/photo_2025_02_18_19_46_21.jpg",
+    "link": "https://www.ada.edu.az/en/events/483-shaping-policies-for-impact-seminar-on-public-administration-policy-analysis"
+  },
+  {
+    "id": 482,
+    "type": "event",
+    "category": "Admission",
+    "title": "First Info Session of ADA University's Master of Laws",
+    "image": "https://www.ada.edu.az/media/2025/01/27/31_yanvar_web.jpg",
+    "link": "https://www.ada.edu.az/en/events/482-first-info-session-of-ada-university-s-master-of-laws"
+  },
+  {
+    "id": 481,
+    "type": "event",
+    "category": "Admission",
+    "title": "Launch Event: Master of Laws (LL.M) Program",
+    "image": "https://www.ada.edu.az/media/2024/12/11/law_new_master_program_website_adaptation_1_.jpg",
+    "link": "https://www.ada.edu.az/en/events/481-launch-event-master-of-laws-ll-m-program"
+  },
+  {
+    "id": 480,
+    "type": "event",
+    "category": "Admission",
+    "title": "Seminar Series for Prospective ADA University Students",
+    "image": "https://www.ada.edu.az/media/2024/10/18/web_ixtisas_1_.jpg",
+    "link": "https://www.ada.edu.az/en/events/480-seminar-series-for-prospective-ada-university-students"
+  },
+  {
+    "id": 479,
+    "type": "event",
+    "category": "Admission",
+    "title": "“Legal Talks” with Lawyer",
+    "image": "https://www.ada.edu.az/media/2024/10/15/huquqsohbetleri_inara_camal_website_1_.jpg",
+    "link": "https://www.ada.edu.az/en/events/479--legal-talks-with-lawyer"
+  }
 ]

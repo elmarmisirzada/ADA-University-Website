@@ -105,13 +105,14 @@
     min-height: 50px;
     padding: 12px 17px;
     border: none;
-    cursor: pointer;3s ease;
+    cursor: pointer;
+    transition: all 0.3s ease;
     line-height: normal;
 }
 
 .down-right button:hover {
     background-color: #2a5068;
-    text-decoration-line: underline;    text-decoration-line: underline;
+    text-decoration-line: underline;
 
 }
 

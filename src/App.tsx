@@ -18,6 +18,7 @@ import NewsEventsPage from './components/NewsEventsPage'
 import ITEngineering from './components/ITEngineering'
 import Undergraduate from './components/Undergraduate'
 import Graduate from './components/Graduate'
+import AdminPanel from './components/AdminPanel'
 function App() {
   
 
@@ -44,6 +45,7 @@ function App() {
         <Route path="/it-engineering" element={<ITEngineering />} />
         <Route path="/undergraduate" element={<Undergraduate />} />
         <Route path="/graduate" element={<Graduate />} />
+        <Route path="/admin" element={<AdminPanel />} />
       </Routes>
       <Footer/>
     </Router>

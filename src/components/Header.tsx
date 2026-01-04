@@ -160,6 +160,10 @@ const Header:React.FC = () => {
             >
               {theme === 'light' ? <MdDarkMode size={20} /> : <MdLightMode size={20} />}
             </button>
+
+            <Link className="btn btn-light ms-2 admin-nav-button" to="/admin">
+              Admin
+            </Link>
           </div>
         </div>
       </div>

@@ -4,6 +4,8 @@ import { IoLayers } from "react-icons/io5"
 import { FaArrowRight } from "react-icons/fa"
 
 interface NewsEvent {
+  id?: number
+  type?: 'news' | 'event'
   category: string
   title: string
   image: string
@@ -20,8 +22,9 @@ const LatestNews: React.FC = () => {
       .catch(error => console.error('Error loading news events:', error))
   }, [])
 
-  const firstThree = newsEvents.slice(0, 3)
-  const lastThree = newsEvents.slice(3, 6)
+  const onlyNews = newsEvents.filter((x) => x.type === 'news' || x.type == null)
+  const firstThree = onlyNews.slice(0, 3)
+  const lastThree = onlyNews.slice(3, 6)
 
   return (
     <div className="latest-news-total">
