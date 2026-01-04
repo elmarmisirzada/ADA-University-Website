@@ -1,15 +1,15 @@
-.main-undergraduate-total {
+.main-graduate-total {
     padding: 60px 40px;
     background-color: #fff;
 }
 
-.undergraduate-content-wrapper {
+.graduate-content-wrapper {
     display: flex;
     gap: 30px;
     align-items: flex-start;
 }
 
-.sidebar-menu {
+.main-graduate-total .sidebar-menu {
     flex: 0 0 350px;
     background-color: #f0f2f4;
     padding: 0;
@@ -18,13 +18,13 @@
     align-self: flex-start;
 }
 
-.sidebar-menu ul {
+.main-graduate-total .sidebar-menu ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.sidebar-menu li {
+.main-graduate-total .sidebar-menu li {
     padding: 5px 25px;
     font-size: 18px;
     font-weight: 600;
@@ -33,7 +33,7 @@
     position: relative;
 }
 
-.sidebar-menu li a {
+.main-graduate-total .sidebar-menu li a {
     color: #5f6368;
     text-decoration: none;
     display: block;
@@ -41,12 +41,12 @@
     transition: all 0.3s ease;
 }
 
-.sidebar-menu li a:hover {
+.main-graduate-total .sidebar-menu li a:hover {
     color: #336178;
     transform: translateX(10px);
 }
 
-.sidebar-menu li.active a {
+.main-graduate-total .sidebar-menu li.active a {
     color: #292929;
     font-weight: 700;
 }
@@ -55,10 +55,9 @@
     flex: 1;
     background-color: white;
     padding: 0px 25px;
-    
 }
 
-.main-content h2{
+.main-content h2 {
     font-size: 48px;
     margin: 0 0 25px;
     font-weight: 700;
@@ -79,7 +78,7 @@
     font-size: 18px;
     line-height: 30px;
     font-style: normal;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
 }
 
 .main-content ul li {
@@ -87,7 +86,7 @@
     font-size: 18px;
     line-height: 30px;
     font-style: normal;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
 }
 
 .programs-table {
@@ -137,24 +136,26 @@
 }
 
 .programs-table tbody td a:hover {
-    color: #ae485e;
+    color: #336178;
     text-decoration: underline;
 }
 
-.video-section {
-    margin-top: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.video-section iframe {
-    max-width: 100%;
-    height: auto;
-    aspect-ratio: 16/9;
-}
-
-
-.international-applicants{
+.international-applicants {
     padding-top: 50px;
+}
+
+.deadlines {
+    padding-top: 0px;
+}
+
+
+.deadlines ul {
+    margin: 0 0 25px;
+    padding-left: 22px;
+}
+
+
+
+.evaluation-process p + p {
+    margin-top: 35px;
 }

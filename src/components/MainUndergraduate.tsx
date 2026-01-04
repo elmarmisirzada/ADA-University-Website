@@ -99,7 +99,7 @@ const MainUndergraduate: React.FC = () => {
                         <iframe width="1088" height="612" src="https://www.youtube.com/embed/ViiSLZAnnJU" title="ADA tələbənin gözü ilə" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                     </div>
 
-                    <div className="international-applicants" id="international-applicants">
+                    <div className="international-applicants py-4" id="international-applicants">
                         <h2>International Applicants</h2>
                         <p>International applicants must follow three-step application process:</p>
                         <p><strong>Step 1</strong>: submit ADA University <a href="https://ssb-prod.ec.ada.edu.az/PROD/bwskalog.P_DispLoginNon">online application</a> and its attachments <br />
@@ -134,7 +134,7 @@ const MainUndergraduate: React.FC = () => {
                         <p>ADA University offers Alimardan bay Topchubashov fellowship for international students as a financial aid. There is no separate application process for the scholarship. To apply for the scholarship, you must submit ADA University admission application form by early deadline of April 1. Find more information <a href="https://www.ada.edu.az/en/admission/financial-aid">here</a>.</p>
                     </div>
 
-                    <div className="citizens-of-azerbaijan py-4" id="citizens-of-azerbaijan">
+                    <div className="citizens-of-azerbaijan" id="citizens-of-azerbaijan">
                         <h2>Citizens of Azerbaijan</h2>
                         <p>Citizens of Azerbaijan can apply to ADA University's undergraduate programs through one of the below shown admission routes. Candidates applying through any of the available routes are required to submit ADA University <a href="https://ssb-prod.ec.ada.edu.az/PROD/bwskalog.P_DispLoginNon">Online Application Form</a>. Click on each route to find out the details of the relevant application process.</p>
 
@@ -151,7 +151,7 @@ const MainUndergraduate: React.FC = () => {
                         </ul>
                     </div>
 
-                    <div className="state-examination-center" id="state-examination-center">
+                    <div className="state-examination-center py-4" id="state-examination-center">
                         <h2>State Examination Center (SEC) Route</h2>
                         <p>If you are applying with State Examination Center (SEC) test results, you must complete ADA University and SEC application process.</p>
 
@@ -244,7 +244,7 @@ const MainUndergraduate: React.FC = () => {
                         <p>Please follow updates in State Examination Center webpage for changes in their application process.</p>
                     </div>
 
-                    <div className="test-result-route" id="test-result-route">
+                    <div className="test-result-route py-4" id="test-result-route">
                         <h2>IB, A level, AP Test Result Route</h2>
 
                         <p><em><strong>Eligibility requirements</strong></em></p>
@@ -326,7 +326,7 @@ const MainUndergraduate: React.FC = () => {
                         <p>All eligible candidates are first listed based on their CGPA and then on their annual grades in the relevant subjects listed above. Candidates are accepted based on their preference in specialty choices and the number of places available for ADA School graduates.</p>
                     </div>
 
-                    <div className="olympiad-win" id="olympiad-winners">
+                    <div className="olympiad-win py-4" id="olympiad-winners">
                         <h2>Route for Olympiad Winners</h2>
 
                         <p><strong>International Olympiads</strong></p>
@@ -398,7 +398,7 @@ const MainUndergraduate: React.FC = () => {
                         </ul>
                     </div>
 
-                    <div className="transfer-admission" id="transfer-admission">
+                    <div className="transfer-admission py-4" id="transfer-admission">
                         <h2>Transfer Admission</h2>
 
                         <p>Students studying at other universities who have completed at least one semester at an undergraduate level degree program can apply to ADA University as a transfer student. Transfer candidates are reviewed individually, and their admission process takes up to 60 business days after the completion of interview for admission.</p>
@@ -444,7 +444,7 @@ const MainUndergraduate: React.FC = () => {
                         <p>Deadline for Fall term transfer applications: June 1</p>
                     </div>
 
-                    <div className="attend-events" id="attend-events">
+                    <div className="attend-events py-4" id="attend-events">
                         <h2>Attend events</h2>
 
                         <p>ADA University Admissions Office hosts a variety of activities, including information sessions, workshops, seminars, campus tours, and master classes for prospective students.</p>

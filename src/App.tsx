@@ -17,6 +17,7 @@ import ItalyAzerbaijanUniversity from './components/ItalyAzerbaijanUniversity'
 import NewsEventsPage from './components/NewsEventsPage'
 import ITEngineering from './components/ITEngineering'
 import Undergraduate from './components/Undergraduate'
+import Graduate from './components/Graduate'
 function App() {
   
 
@@ -42,6 +43,7 @@ function App() {
         <Route path="/news-events" element={<NewsEventsPage />} />
         <Route path="/it-engineering" element={<ITEngineering />} />
         <Route path="/undergraduate" element={<Undergraduate />} />
+        <Route path="/graduate" element={<Graduate />} />
       </Routes>
       <Footer/>
     </Router>
