@@ -1,3 +1,196 @@
+@media (max-width: 600px) {
+    .second-assets {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .second-assets .texts {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 18px;
+        margin-bottom: 10px;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+    .second-assets .university-logo-text {
+        color: #ae485e !important;
+        font-size: 16px;
+        font-weight: 600;
+        margin: 0;
+        padding-left: 16px;
+    }
+    .second-assets .download-text {
+        font-size: 15px;
+        color: #336178;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        margin: 0;
+    }
+    .second-assets .brand-photos {
+        padding: 0 8px;
+    }
+    .second-assets .brand-photos img {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+        display: block;
+        margin: 0 0 12px 0;
+        border: 1px dashed #d7d7d7;
+        border-radius: 8px;
+        background: #fff;
+        padding: 8px;
+        object-fit: contain;
+    }
+    .second-assets .brand-photos p {
+        font-size: 15px;
+        line-height: 22px;
+        margin: 0 0 0 0;
+        text-align: left;
+        color: var(--text-secondary);
+        padding: 0 2px;
+    }
+    .third-assets {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 0;
+        padding: 0px 0 16px 20px;
+        box-sizing: border-box;
+    }
+    .third-assets h6 {
+        font-size: 17px;
+        font-weight: 700;
+        margin: 18px 0 12px 0;
+        padding-left: 0px;
+    }
+    .colors .row {
+        flex-direction: column;
+        gap: 18px;
+    }
+    .caspian-blue, .white, .pomegranate {
+        width: 100%;
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+        padding: 0 8px 0 8px;
+    }
+    .caspian-blue p, .white p, .pomegranate p {
+        font-size: 15px;
+        margin: 0 0 4px 0;
+        min-width: 90px;
+        font-weight: 500;
+    }
+    .caspian-blue button, .white button, .pomegranate button {
+        width: 100%;
+        min-width: 0;
+        font-size: 15px;
+        padding: 8px 0;
+        border-radius: 3px;
+        margin-bottom: 0;
+        text-align: left;
+        box-sizing: border-box;
+    }
+    .caspian-blue button {
+        background: #336178;
+        color: #fff;
+        border: 1px solid #336178;
+    }
+    .white button {
+        background: #fff;
+        color: #000;
+        border: 1px solid #d7d7d7;
+    }
+    .pomegranate button {
+        background: #ae485e;
+        color: #fff;
+        border: 1px solid #ae485e;
+    }
+}
+    .university-logo-text {
+        padding-left: 16px;
+    }
+
+/* --- MOBILE STYLES FOR BRAND ASSETS SECTION --- */
+@media (max-width: 768px) {
+    .brand-assets-total {
+        padding: 24px 0 16px 0;
+    }
+    .brand-assets-total .container {
+        padding: 0 8px;
+    }
+    .brand-assets-total .container h4 {
+        font-size: 22px;
+        margin-bottom: 18px;
+        text-align: left;
+        color: #336178 !important;
+        font-weight: 700;
+        letter-spacing: 0.1px;
+    }
+    .assets-parts .row {
+        flex-direction: column;
+        gap: 24px;
+    }
+    .first-assets {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .texts {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 18px;
+        margin-bottom: 10px;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+    .university-logo-text {
+        color: #ae485e !important;
+        font-size: 16px;
+        font-weight: 600;
+        margin: 0;
+    }
+    .download-text {
+        font-size: 15px;
+        color: #336178;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        margin: 0;
+    }
+    .brand-photos {
+        padding: 0 8px;
+    }
+    .brand-photos img {
+        width: 100%;
+        max-width: 260px;
+        height: auto;
+        display: block;
+        margin: 0 0 12px 0;
+        border: 1px dashed #d7d7d7;
+        border-radius: 8px;
+        background: #fff;
+        padding: 8px;
+        object-fit: contain;
+    }
+    .brand-photos p {
+        font-size: 18px;
+        line-height: 30px;
+        margin: 10px 0 0 0;
+        text-align: left;
+        color: var(--text-secondary);
+        padding: 0 2px;
+    }
+}
 .brand-assets-total {
     padding: 60px 0;
     background-color: var(--bg-primary);

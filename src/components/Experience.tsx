@@ -52,22 +52,23 @@ const Experience: React.FC = () => {
             </div>
 
             <section className="ada-is-section">
-                    <div className="back-title">ADA IS</div>
-                    <div className="ada-is-vertical-container">
-                        <div className="animated-text">
-                            <span className="text-item">innovative campus</span>
-                            <span className="text-item">venue of academic excellence</span>
-                            <span className="text-item">melting pot of cultures</span>
-                            <span className="text-item">ever-growing community</span>
-                            <span className="text-item">home</span>
-                            <span className="text-item clone">innovative campus</span>
-                            <span className="text-item clone">venue of academic excellence</span>
-                            <span className="text-item clone">melting pot of cultures</span>
-                            <span className="text-item clone">ever-growing community</span>
-                            <span className="text-item clone">home</span>
-                        </div>
+                <div className="back-title">ADA IS</div>
+
+                <div className="ada-is-vertical-container">
+                    <div className="animated-text">
+                        <span className="text-item">innovative campus</span>
+                        <span className="text-item">venue of academic excellence</span>
+                        <span className="text-item">melting pot of cultures</span>
+                        <span className="text-item">ever-growing community</span>
+                        <span className="text-item">home</span>
+                        <span className="text-item clone">innovative campus</span>
+                        <span className="text-item clone">venue of academic excellence</span>
+                        <span className="text-item clone">melting pot of cultures</span>
+                        <span className="text-item clone">ever-growing community</span>
+                        <span className="text-item clone">home</span>
                     </div>
-                </section>
+                </div>
+            </section>
         </div>
     )
 }

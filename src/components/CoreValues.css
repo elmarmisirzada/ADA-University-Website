@@ -124,3 +124,77 @@
     padding: 2px 6px;
 }
 
+@media (max-width: 768px){
+    .core-total{
+        padding: 22px 0;
+    }
+
+    .core-total .container{
+        padding: 0 18px;
+    }
+
+    .core-selection button{
+        padding: 30px 24px;
+    }
+
+    .core-four-part .row{
+        flex-direction: column;
+        gap: 34px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .core-four-part .col-3{
+        /* Override Bootstrap .col-3 (25% width) on mobile */
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .core-four-part h2{
+        font-size: 18px;
+        margin-bottom: 16px;
+    }
+
+    .core-four-part p{
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 14px;
+        align-items: flex-start;
+        gap: 14px;
+    }
+
+    .core-four-part p span{
+        flex: 1;
+        min-width: 0;
+    }
+
+    .brand{
+        margin-top: 28px;
+    }
+
+    .brand h2{
+        font-size: 26px;
+        margin-bottom: 14px;
+    }
+
+    .brand p{
+        font-size: 15px;
+        line-height: 26px;
+        margin-bottom: 16px;
+    }
+
+    .blue-text,
+    .white-text,
+    .red-text{
+        padding: 1px 6px;
+    }
+
+    .core-four-part p svg{
+        font-size: 18px;
+        margin-top: 2px;
+    }
+}
+

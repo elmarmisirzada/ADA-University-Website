@@ -16,6 +16,10 @@
     margin-top: 30px;
 }
 
+.first-card-event {
+    margin-bottom: 22px;
+}
+
 .first-card-event button {
     width: 100%;
     height: auto;
@@ -64,6 +68,73 @@
     font-size: 16px;
     margin-bottom: 0;
     opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .latest-news-total {
+        margin-top: 24px;
+        padding-bottom: 28px;
+    }
+
+    .top-latest-news h1 {
+        padding-left: 0;
+        font-size: 26px;
+        margin-bottom: 12px;
+    }
+
+    .top-three-cards {
+        padding-left: 0;
+        margin-top: 16px;
+    }
+
+    .top-three-cards .row {
+        margin: 0;
+    }
+
+    .first-card-event {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+        width: 100% !important;
+        padding: 0 0 18px 0;
+        margin-bottom: 0;
+    }
+
+    .first-card-event img,
+    .ikinci-defe a img {
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+
+    .first-card-event img:hover {
+        transform: none;
+        box-shadow: none;
+    }
+
+    .first-card-event button {
+        margin-top: 12px;
+        min-height: 0;
+    }
+
+    .first-card-event button p {
+        margin: 0;
+    }
+
+    .first-card-event button .title {
+        margin-top: 6px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .last-defe {
+        margin-top: 10px;
+    }
+
+    .middle-event-button {
+        justify-content: flex-start;
+        margin-top: 10px;
+    }
 }
 
 .middle-event-button {

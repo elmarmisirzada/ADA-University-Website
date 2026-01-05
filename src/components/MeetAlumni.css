@@ -1,3 +1,7 @@
+.total-meet{
+    padding: 70px 0;
+}
+
 .top-alumni{
     display: flex;
     justify-content: space-between;
@@ -25,6 +29,20 @@
     justify-content: center;
 }
 
+.alumni-video{
+    width: 100%;
+    max-width: 1240px;
+    aspect-ratio: 16 / 9;
+    position: relative;
+}
+
+.alumni-iframe{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
 .bottom-alumni{
     padding-left: 25px;
 }
@@ -42,4 +60,52 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+
+@media (max-width: 768px){
+    .total-meet{
+        padding: 32px 0;
+    }
+
+    .top-alumni{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        margin-bottom: 16px;
+    }
+
+    .top-alumni h1{
+        font-size: 26px;
+        line-height: 1.2;
+        margin: 0;
+    }
+
+    .top-alumni button{
+        padding: 10px 28px !important;
+    }
+
+    .middle-alumni{
+        justify-content: flex-start;
+    }
+
+    .bottom-alumni{
+        padding-left: 0;
+    }
+
+    .bottom-alumni.my-5{
+        margin-top: 22px !important;
+        margin-bottom: 0 !important;
+    }
+
+    .bottom-alumni h1{
+        font-size: 22px;
+        line-height: 1.25;
+        margin-bottom: 10px;
+    }
+
+    .bottom-alumni p{
+        font-size: 18px;
+        line-height: 30px;
+        margin: 0;
+    }
 }

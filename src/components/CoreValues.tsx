@@ -23,37 +23,37 @@ const CoreValues: React.FC = () => {
                             <div className="row">
                                 <div className="first-part col-3">
                                     <h2>Core Values</h2>
-                                    <p><FaCheck /> Academic excellence</p>
-                                    <p><FaCheck /> Accountability and shared governance</p>
-                                    <p><FaCheck /> Honor, integrity and transparency</p>
-                                    <p><FaCheck /> Diversity, collaboration and communication</p>
-                                    <p><FaCheck /> Social responsibility</p>
+                                    <p><FaCheck /><span>Academic excellence</span></p>
+                                    <p><FaCheck /><span>Accountability and shared governance</span></p>
+                                    <p><FaCheck /><span>Honor, integrity and transparency</span></p>
+                                    <p><FaCheck /><span>Diversity, collaboration and communication</span></p>
+                                    <p><FaCheck /><span>Social responsibility</span></p>
                                 </div>
 
                                 <div className="second-part col-3">
                                     <h2>Schools</h2>
-                                    <p><FaCheck /> School of Public and International Affairs</p>
-                                    <p><FaCheck /> School of Business</p>
-                                    <p><FaCheck /> School of IT and Engineering</p>
-                                    <p><FaCheck /> School of Education</p>
-                                    <p><FaCheck /> School of Law</p>
-                                    <p><FaCheck /> School of Agricultural and Food Sciences</p>
-                                    <p><FaCheck /> School of Design and Architecture</p>
+                                    <p><FaCheck /><span>School of Public and International Affairs</span></p>
+                                    <p><FaCheck /><span>School of Business</span></p>
+                                    <p><FaCheck /><span>School of IT and Engineering</span></p>
+                                    <p><FaCheck /><span>School of Education</span></p>
+                                    <p><FaCheck /><span>School of Law</span></p>
+                                    <p><FaCheck /><span>School of Agricultural and Food Sciences</span></p>
+                                    <p><FaCheck /><span>School of Design and Architecture</span></p>
                                 </div>
 
                                 <div className="third-part col-3">
                                     <h2>Students</h2>
-                                    <p><IoPerson /> 4340 students</p>
-                                    <p><GiGraduateCap /> 84% undergraduate</p>
-                                    <p><GiGraduateCap /> 16% graduate</p>
-                                    <p><BiFemale /> 52% female</p>
-                                    <p><FaMale /> 48% male</p>
+                                    <p><IoPerson /><span>4340 students</span></p>
+                                    <p><GiGraduateCap /><span>84% undergraduate</span></p>
+                                    <p><GiGraduateCap /><span>16% graduate</span></p>
+                                    <p><BiFemale /><span>52% female</span></p>
+                                    <p><FaMale /><span>48% male</span></p>
                                 </div>
 
                                 <div className="fourth-part col-3">
                                     <h2>Alumni</h2>
-                                    <p><GiWorld /> 2500 alumni in 48 countries</p>
-                                    <p><MdOutlineWork /> 4442 alumni of ADA University Executive Education</p>
+                                    <p><GiWorld /><span>2500 alumni in 48 countries</span></p>
+                                    <p><MdOutlineWork /><span>4442 alumni of ADA University Executive Education</span></p>
                                 </div>
 
 

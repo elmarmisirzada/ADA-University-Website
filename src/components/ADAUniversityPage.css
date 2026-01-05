@@ -102,3 +102,52 @@
     font-size: 12px;
     color: #fff;
 }
+
+@media (max-width: 768px){
+    .total-ada-university{
+        --ada-hero-h: 210px;
+        margin-top: 72px;
+    }
+
+    /* Edge-to-edge bars on mobile (no side gaps from Bootstrap container) */
+    .top-ada-university .container,
+    .bottom-of-topada .container{
+        max-width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .video-background{
+        height: var(--ada-hero-h);
+    }
+
+    .top-ada-university{
+        padding-top: var(--ada-hero-h);
+    }
+
+    .top-ada-university button{
+        padding: 14px 0 10px 0;
+    }
+
+    .top-ada-university button h1{
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    .top-ada-university  button h1{
+        font-size: 22px;
+    }
+
+    .bottom-of-topada{
+        margin-top: 0;
+        padding: 10px 0;
+    }
+
+    .breadcrumb-nav{
+        font-size: 13px;
+        gap: 8px;
+        flex-wrap: wrap;
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+}

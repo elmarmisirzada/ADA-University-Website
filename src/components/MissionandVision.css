@@ -51,3 +51,39 @@
     margin: 0;
 }
 
+@media (max-width: 768px){
+    .mission-total{
+        padding: 18px 0 28px;
+    }
+
+    .mission-total .container{
+        padding: 0 18px;
+    }
+
+    .mission-buttons{
+        flex-direction: column;
+        gap: 22px;
+        margin-top: 12px;
+    }
+
+    .mission-buttons button{
+        max-width: none;
+        width: 100%;
+        padding: 26px 22px;
+    }
+
+    .mission-buttons button h2{
+        font-size: 22px;
+        margin-bottom: 14px;
+    }
+
+    .mission-buttons button p{
+        font-size: 15px;
+        line-height: 1.75;
+    }
+
+    .mission-buttons br{
+        display: none;
+    }
+}
+

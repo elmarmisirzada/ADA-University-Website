@@ -12,16 +12,19 @@ const MeetAlumni: React.FC = () => {
                     </button>
                 </div>
                 <div className="middle-alumni">
-                    <iframe 
-                    width="1240" 
-                    height="650" 
-                    src="https://www.youtube.com/embed/_cgWiPKSGy0?si=rc9EA3L-X1ZEoNKr" 
-                    title="YouTube video player" 
-                    frameBorder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
-                    web-share" referrerPolicy="strict-origin-when-cross-origin" 
-                    allowFullScreen>
-                    </iframe>
+                    <div className="alumni-video">
+                        <iframe 
+                        className="alumni-iframe"
+                        width="1240" 
+                        height="650" 
+                        src="https://www.youtube.com/embed/_cgWiPKSGy0?si=rc9EA3L-X1ZEoNKr" 
+                        title="YouTube video player" 
+                        frameBorder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
+                        web-share" referrerPolicy="strict-origin-when-cross-origin" 
+                        allowFullScreen>
+                        </iframe>
+                    </div>
                 </div>
                 <div className="bottom-alumni my-5">
                     <h1>

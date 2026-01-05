@@ -35,9 +35,83 @@
     margin-bottom: 30px;
 }
 
+.images .mySwiper{
+    width: 100%;
+}
+
 .images img{
     width: 100%;
     height: auto;
+}
+
+@media (max-width: 768px){
+    .top-experience{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 24px;
+        margin-bottom: 16px;
+        gap: 12px;
+    }
+
+    .top-experience h1{
+        font-size: 26px;
+        margin: 0;
+    }
+
+    .top-experience button{
+        padding: 10px 18px;
+        width: 100%;
+        max-width: 260px;
+    }
+
+    .images{
+        margin-bottom: 18px;
+    }
+
+    .images .mySwiper{
+        position: relative;
+        padding-bottom: 56px;
+        background-color: #224e61;
+    }
+
+    .images .swiper{
+        overflow: visible;
+    }
+
+    .images .swiper-slide img{
+        display: block;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        background-color: #224e61;
+    }
+
+    .images .swiper-pagination{
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 56px;
+        background-color: #224e61;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .images .swiper-pagination-bullet{
+        width: 28px;
+        height: 3px;
+        border-radius: 0;
+        background: rgba(255,255,255,0.35);
+        opacity: 1;
+        margin: 0;
+    }
+
+    .images .swiper-pagination-bullet-active{
+        background: rgba(255,255,255,0.95);
+    }
 }
 
 .ada-is-section {
@@ -167,5 +241,81 @@
     }
     100% {
         transform: translateY(-320px);
+    }
+}
+
+@media (max-width: 768px){
+    .ada-is-section{
+        /* Match ADA mobile screenshot height */
+        height: clamp(580px, 78vh, 720px);
+        margin: 24px 0 0 0;
+    }
+
+    .ada-is-section::before{
+        background: #ffffff;
+        opacity: 0.78;
+    }
+
+    .ada-is-section::after{
+        display: none;
+    }
+
+    .back-title{
+        font-size: 96px;
+        letter-spacing: 10px;
+        color: rgba(173, 193, 208, 0.38);
+        top: 34%;
+    }
+
+    .ada-is-vertical-container{
+        height: 300px;
+        padding: 0 12px;
+    }
+
+    .animated-text{
+        padding: 16px 18px;
+        gap: 0;
+        width: min(520px, 100%);
+    }
+
+    .text-item{
+        font-size: clamp(18px, 5.2vw, 26px);
+        line-height: 1.15;
+        height: 80px;
+        white-space: normal;
+        padding: 0 10px;
+    }
+
+    .ada-is-mobile{
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 1rem var(--ada-is-bottom-bar);
+    }
+
+    .ada-is-mobile-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 22px;
+        margin-top: 40px;
+    }
+
+    .ada-is-mobile .text-item{
+        font-size: 26px;
+        line-height: 1.2;
+        height: auto;
+        color: rgba(90, 122, 143, 0.65);
+        white-space: normal;
+        text-align: center;
+    }
+
+    .ada-is-mobile .text-item-active{
+        color: #336178;
+        font-weight: 700;
     }
 }

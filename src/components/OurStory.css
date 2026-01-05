@@ -34,3 +34,25 @@
 .our-story-total a:hover {
     color: var(--accent-color);
 }
+
+@media (max-width: 768px){
+    .our-story-total{
+        padding: 24px 0;
+    }
+
+    .our-story-total h1{
+        font-size: 26px;
+        margin-bottom: 14px;
+    }
+
+    .our-story-total p{
+        font-size: 15px;
+        line-height: 26px;
+        margin-bottom: 18px;
+    }
+
+    .our-story-total a{
+        display: inline-block;
+        font-size: 15px;
+    }
+}

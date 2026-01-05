@@ -60,11 +60,11 @@ const Footer: React.FC = () => {
 
             <div className="col-12 col-md-3">
               <h5>Contact Us</h5>
-              <p>info@ada.edu.az</p>
-              <p>(+994 12) 437 32 35</p>
-              <p>(+994 12) 437 32 36</p>
-              <p>Ahmadbey Aghaoghlu str. 61,Baku, Azerbaijan, AZ1008</p>
-              <button className='footer-button'>Apply Now </button>
+              <p className="contact-email">info@ada.edu.az</p>
+              <p className="contact-extra">(+994 12) 437 32 35</p>
+              <p className="contact-extra">(+994 12) 437 32 36</p>
+              <p className="contact-extra">Ahmadbey Aghaoghlu str. 61,Baku, Azerbaijan, AZ1008</p>
+              <button className='footer-button contact-extra'>Apply Now </button>
             </div>
           </div>
 
