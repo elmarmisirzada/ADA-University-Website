@@ -115,3 +115,60 @@
     flex: 0 0 calc(25% - 22.5px);
     max-width: calc(25% - 22.5px);
 }
+
+@media (max-width: 768px){
+    .engineering-faculty-total{
+        margin-top: 40px;
+    }
+
+    .meet-our-faculty-part h2{
+        font-size: 28px;
+        margin: 0 0 14px;
+    }
+
+    .meet-our-faculty-part h2::before,
+    .meet-our-faculty-part h2::after{
+        height: 3px;
+        margin: 0 12px;
+        max-width: 110px;
+        margin-top: 6px;
+    }
+
+    .meet-our-faculty-part p{
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 22px;
+    }
+
+    .meet-our-faculty-part p br{
+        display: none;
+    }
+
+    .information-about-teachers{
+        grid-template-columns: 1fr;
+        gap: 22px;
+        margin-top: 18px;
+    }
+
+    .faculty-card img{
+        margin-bottom: 12px;
+    }
+
+    .faculty-card h3{
+        font-size: 18px;
+    }
+
+    .information-about-staff-members{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 22px;
+        margin-top: 18px;
+        margin-bottom: 50px;
+        justify-content: initial;
+    }
+
+    .information-about-staff-members .faculty-card{
+        flex: initial;
+        max-width: 100%;
+    }
+}

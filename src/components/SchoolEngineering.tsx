@@ -90,7 +90,7 @@ const SchoolEngineering: React.FC = () => {
             <div className="container">
                 <div className="engineering-percentage">
                     <div className="row">
-                        <div className="first-percentage col-4">
+                    <div className="first-percentage col-12 col-md-4">
                             <div className="undergraduate">
                                 <div className="sekil-faiz d-flex align-items-center">
                                     <img src="https://www.ada.edu.az/media/2024/09/20/book_16485020_1_.png" alt="" />
@@ -108,7 +108,7 @@ const SchoolEngineering: React.FC = () => {
                             </div>
                         </div>
 
-                        <div className="second-percentage col-4">
+                        <div className="second-percentage col-12 col-md-4">
                             <div className="graduate">
                                 <div className="sekil-faiz d-flex align-items-center">
                                     <img src="https://www.ada.edu.az/media/2024/09/20/study_566985_3_1_.png" alt="" />
@@ -126,7 +126,7 @@ const SchoolEngineering: React.FC = () => {
                             </div>
                         </div>
 
-                        <div className="first-percentage col-4">
+                        <div className="first-percentage col-12 col-md-4">
                             <div className="undergraduate">
                                 <div className="sekil-faiz d-flex align-items-center">
                                     <img src="https://www.ada.edu.az/media/2024/09/20/pandemic_2790625_1_1_.png" alt="" />

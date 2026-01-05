@@ -73,3 +73,65 @@
     gap: 2px;
 
 }
+
+@media (max-width: 768px){
+    .engineering-total{
+        margin-top: 16px;
+    }
+
+    .top-engineering h2{
+        font-size: 28px;
+        line-height: 120%;
+        margin-bottom: 12px;
+    }
+
+    .top-engineering p{
+        font-size: 16px;
+        line-height: 26px;
+        margin-top: 0;
+    }
+
+    .middle-engineering{
+        padding: 18px 0;
+    }
+
+    .engineering-percentage{
+        padding: 10px 0;
+    }
+
+    .first-percentage,
+    .second-percentage{
+        padding: 14px 10px;
+    }
+
+    .undergraduate,
+    .graduate,
+    .alumni{
+        margin-bottom: 20px;
+    }
+
+    .sekil-faiz{
+        gap: 12px;
+        margin-bottom: 10px;
+    }
+
+    .sekil-faiz img{
+        width: 34px;
+        height: 34px;
+        object-fit: contain;
+        flex: 0 0 auto;
+    }
+
+    .first-percentage h1,
+    .second-percentage h1{
+        font-size: 44px;
+        line-height: 44px;
+        margin: 0;
+    }
+
+    .engineering-total h4{
+        font-size: 14px;
+        letter-spacing: 0.4px;
+        margin: 0;
+    }
+}

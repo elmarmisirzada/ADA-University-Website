@@ -7,7 +7,7 @@ const EngineeringPrograms: React.FC = () => {
             <h2>Programs</h2>
             <div className="three-button-engineering">
                 <div className="row">
-                    <div className="first-button-engineering col-4">
+                    <div className="first-button-engineering col-12 col-md-4">
                         <button>
                         <h4>Undergraduate</h4>
                         <nav>
@@ -20,7 +20,7 @@ const EngineeringPrograms: React.FC = () => {
                 </button>
                     </div>
 
-                    <div className="second-button-engineering col-4">   
+                    <div className="second-button-engineering col-12 col-md-4">   
                         <button>
                         <h4>Graduate</h4>
                         <nav>
@@ -31,7 +31,7 @@ const EngineeringPrograms: React.FC = () => {
                 </button>
                     </div>
 
-                    <div className="first-button-engineering col-4">
+                    <div className="first-button-engineering col-12 col-md-4">
                         <button>
                         <h4>PhD</h4>
                         <nav>

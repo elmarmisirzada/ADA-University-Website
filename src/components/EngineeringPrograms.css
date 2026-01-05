@@ -137,3 +137,55 @@
     text-decoration: underline;
 }
 
+@media (max-width: 768px){
+    .engineering-programs-total{
+        margin-top: 24px;
+        padding-bottom: 60px;
+    }
+
+    .engineering-programs-total h2{
+        font-size: 30px;
+        margin: 0 0 14px;
+    }
+
+    .three-button-engineering .row{
+        row-gap: 18px;
+    }
+
+    .first-button-engineering button,
+    .second-button-engineering button{
+        padding: 44px 16px;
+        min-height: 340px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .first-button-engineering button h4,
+    .second-button-engineering button h4{
+        font-size: 28px;
+        margin: 0;
+    }
+
+    .first-button-engineering nav,
+    .second-button-engineering nav{
+        margin-top: 16px;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .first-button-engineering nav a,
+    .second-button-engineering nav a{
+        font-size: 16px;
+        line-height: 26px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .first-button-engineering nav a::after,
+    .second-button-engineering nav a::after{
+        margin-left: 6px;
+    }
+}
+
