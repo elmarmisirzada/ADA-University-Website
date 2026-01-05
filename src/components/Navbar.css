@@ -8,6 +8,12 @@
 	width: 100%;
 }
 
+@media (max-width: 768px) {
+	.navbar-custom {
+		display: none;
+	}
+}
+
 .navbar-custom .nav-link {
 	color: #ffffff;
   font-size: 14px;
@@ -62,4 +68,24 @@
 .navbar-custom .btn:hover {
  	color: #ffffff !important; 
  	border-color: #ae485e;
+}
+
+.navbar-custom .navbar-nav {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+}
+
+@media (max-width: 768px) {
+	.navbar-custom .navbar-nav {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 0.25rem;
+		padding: 0.5rem 0;
+	}
+
+	.navbar-custom .nav-link,
+	.navbar-custom .btn-apply {
+		width: 100%;
+	}
 }

@@ -59,8 +59,27 @@ const BackgroundandCard: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  useEffect(() => {
+    const updateForViewport = () => {
+      if (window.innerWidth <= 768) {
+        setShowCards(true)
+      }
+    }
+
+    updateForViewport()
+    window.addEventListener('resize', updateForViewport)
+    return () => window.removeEventListener('resize', updateForViewport)
+  }, [])
+
   return (
     <div className="bg-card-container">
+      <div className="backgroundvideo">
+        <video className="bg-video" autoPlay muted loop playsInline>
+          <source src="https://www.ada.edu.az/media/2024/11/05/ada_website_looped_video_final_11_04_2024-2.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
       <div className={`total-car ${showCards ? 'cards-visible' : ''}`} ref={cardsRef}>
         {loading ? (
           <div className="loading-container">
@@ -95,13 +114,6 @@ const BackgroundandCard: React.FC = () => {
             ))}
           </Swiper>
         )}
-      </div>
-
-      <div className="backgroundvideo">
-        <video className="bg-video" autoPlay muted loop playsInline>
-          <source src="https://www.ada.edu.az/media/2024/11/05/ada_website_looped_video_final_11_04_2024-2.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
       </div>
     </div>
   )

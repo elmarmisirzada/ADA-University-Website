@@ -85,7 +85,7 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	background-color: #ad485e;
+	background-color: var(--accent-color);
 	color: white;
 	padding: 3px 10px;
 	z-index: 3;
@@ -159,5 +159,80 @@
 
 .menimSwiper {
 	padding-bottom: 1rem;
+}
+
+.menimSwiper .swiper-slide {
+	display: flex;
+	justify-content: center;
+}
+
+.menimSwiper .swiper-button-prev,
+.menimSwiper .swiper-button-next {
+	color: #ffffff;
+}
+
+@media (max-width: 768px) {
+	.backgroundvideo {
+		height: 52vh;
+		overflow: hidden;
+	}
+
+	.bg-video {
+		height: 100%;
+		object-fit: cover;
+	}
+
+	.total-car {
+		position: relative;
+		top: auto;
+		left: auto;
+		padding: 0 1rem;
+		margin-top: clamp(-260px, -26vh, -140px);
+		opacity: 1;
+		transform: none;
+	}
+
+	.total-car .card {
+		width: min(92vw, 420px);
+		min-height: clamp(360px, 52vh, 520px);
+	}
+
+	.total-car .card .card-body {
+		padding: 1.25rem 1rem;
+		gap: 0.75rem;
+	}
+
+	.total-car .card .carddescription {
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	.menimSwiper {
+		padding-bottom: 0;
+	}
+
+	.menimSwiper .swiper-button-prev,
+	.menimSwiper .swiper-button-next {
+		display: none;
+	}
+}
+
+@media (max-width: 480px) {
+	.backgroundvideo {
+		height: 48vh;
+	}
+
+	.total-car {
+		padding: 0 0.75rem;
+		margin-top: clamp(-240px, -28vh, -130px);
+	}
+
+	.total-car .card {
+		width: min(94vw, 420px);
+	}
+
+	.card-label .cardname {
+		font-size: 12px;
+	}
 }
 
