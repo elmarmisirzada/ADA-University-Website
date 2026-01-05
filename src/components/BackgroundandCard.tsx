@@ -20,7 +20,6 @@ const BackgroundandCard: React.FC = () => {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
   const cardsRef = useRef<HTMLDivElement>(null)
-  const lastScrollY = useRef(0)
 
   useEffect(() => {
     setLoading(true)
@@ -37,26 +36,32 @@ const BackgroundandCard: React.FC = () => {
   }, [])
 
   useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY
-      
-      if (currentScrollY > lastScrollY.current) {
-        if (cardsRef.current) {
-          const rect = cardsRef.current.getBoundingClientRect()
-          const windowHeight = window.innerHeight
-          
-          if (rect.bottom <= windowHeight) {
-            setShowCards(true)
-          }
-        }
-      }
-      
-      lastScrollY.current = currentScrollY
+    if (window.innerWidth <= 768) {
+      setShowCards(true)
+      return
     }
 
-    window.addEventListener('scroll', handleScroll)
-    
-    return () => window.removeEventListener('scroll', handleScroll)
+    const target = cardsRef.current
+    if (!target) return
+
+    if (!('IntersectionObserver' in window)) {
+      setShowCards(true)
+      return
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const entry = entries[0]
+        if (entry?.isIntersecting) {
+          setShowCards(true)
+          observer.disconnect()
+        }
+      },
+      { threshold: 0.15 }
+    )
+
+    observer.observe(target)
+    return () => observer.disconnect()
   }, [])
 
   useEffect(() => {
