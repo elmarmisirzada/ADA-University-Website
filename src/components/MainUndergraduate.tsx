@@ -1,24 +1,79 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './MainUndergraduate.css'
 
 const MainUndergraduate: React.FC = () => {
+    const [isMobileSubmenuOpen, setIsMobileSubmenuOpen] = useState(false)
+
+    const scrollToSection = (id: string) => {
+        const target = document.getElementById(id)
+        if (!target) return
+
+        const header = document.querySelector('.header-wrapper') as HTMLElement | null
+        const headerHeight = header ? header.getBoundingClientRect().height : 0
+        const extraOffset = 12
+
+        const top = target.getBoundingClientRect().top + window.scrollY - headerHeight - extraOffset
+        window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' })
+
+        try {
+            window.history.replaceState(null, '', `#${id}`)
+        } catch {
+            // ignore
+        }
+    }
+
+    const handleSubmenuClick = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
+        e.preventDefault()
+        scrollToSection(id)
+        setIsMobileSubmenuOpen(false)
+    }
+
     return (
         <div className="main-undergraduate-total">
             <div className="undergraduate-content-wrapper">
-                <aside className="sidebar-menu">
+                <button
+                    type="button"
+                    className="submenu-toggle"
+                    onClick={() => setIsMobileSubmenuOpen((v) => !v)}
+                    aria-expanded={isMobileSubmenuOpen}
+                    aria-controls="undergraduate-submenu"
+                >
+                    Sub menu
+                </button>
+
+                {isMobileSubmenuOpen && (
+                    <button
+                        type="button"
+                        className="submenu-backdrop"
+                        aria-label="Close submenu"
+                        onClick={() => setIsMobileSubmenuOpen(false)}
+                    />
+                )}
+
+                <aside
+                    id="undergraduate-submenu"
+                    className={`sidebar-menu${isMobileSubmenuOpen ? ' is-open' : ''}`}
+                >
+                    <button
+                        type="button"
+                        className="submenu-close"
+                        onClick={() => setIsMobileSubmenuOpen(false)}
+                    >
+                        Close
+                    </button>
                     <ul>
-                        <li><a href="#undergraduate-admissions">Undergraduate Admissions</a></li>
-                        <li><a href="#international-applicants">International Applicants</a></li>
-                        <li><a href="#citizens-of-azerbaijan">Citizens of Azerbaijan</a></li>
-                        <li><a href="#state-examination-center">State Examination Center (SEC) Route</a></li>
-                        <li><a href="#sat-route">SAT Route</a></li>
-                        <li><a href="#test-result-route">IB, A level, AP Test Result Route</a></li>
-                        <li><a href="#ada-school-route">ADA School Route</a></li>
-                        <li><a href="#olympiad-winners">Route for Olympiad Winners</a></li>
-                        <li><a href="#deadlines">Deadlines</a></li>
-                        <li><a href="#transfer-admission">Transfer Admission</a></li>
-                        <li><a href="#attend-events">Attend events</a></li>
-                        <li><a href="#contact-us">Contact us</a></li>
+                        <li><a href="#undergraduate-admissions" onClick={(e) => handleSubmenuClick(e, 'undergraduate-admissions')}>Undergraduate Admissions</a></li>
+                        <li><a href="#international-applicants" onClick={(e) => handleSubmenuClick(e, 'international-applicants')}>International Applicants</a></li>
+                        <li><a href="#citizens-of-azerbaijan" onClick={(e) => handleSubmenuClick(e, 'citizens-of-azerbaijan')}>Citizens of Azerbaijan</a></li>
+                        <li><a href="#state-examination-center" onClick={(e) => handleSubmenuClick(e, 'state-examination-center')}>State Examination Center (SEC) Route</a></li>
+                        <li><a href="#sat-route" onClick={(e) => handleSubmenuClick(e, 'sat-route')}>SAT Route</a></li>
+                        <li><a href="#test-result-route" onClick={(e) => handleSubmenuClick(e, 'test-result-route')}>IB, A level, AP Test Result Route</a></li>
+                        <li><a href="#ada-school-route" onClick={(e) => handleSubmenuClick(e, 'ada-school-route')}>ADA School Route</a></li>
+                        <li><a href="#olympiad-winners" onClick={(e) => handleSubmenuClick(e, 'olympiad-winners')}>Route for Olympiad Winners</a></li>
+                        <li><a href="#deadlines" onClick={(e) => handleSubmenuClick(e, 'deadlines')}>Deadlines</a></li>
+                        <li><a href="#transfer-admission" onClick={(e) => handleSubmenuClick(e, 'transfer-admission')}>Transfer Admission</a></li>
+                        <li><a href="#attend-events" onClick={(e) => handleSubmenuClick(e, 'attend-events')}>Attend events</a></li>
+                        <li><a href="#contact-us" onClick={(e) => handleSubmenuClick(e, 'contact-us')}>Contact us</a></li>
                     </ul>
 
                 </aside>

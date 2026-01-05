@@ -53,3 +53,35 @@
     margin: 0;
 }
 
+@media (max-width: 768px){
+    .total-campus{
+        padding: 24px 0 0 0;
+        margin-bottom: 60px;
+    }
+
+    .total-campus .container{
+        max-width: 100%;
+        padding: 0 14px;
+    }
+
+    .campus-buttons{
+        flex-direction: column;
+        gap: 18px;
+        margin-top: 0;
+    }
+
+    .campus-buttons button{
+        max-width: 100%;
+        padding: 22px 22px;
+    }
+
+    .campus-buttons button h2{
+        font-size: 24px;
+        margin-bottom: 14px;
+    }
+
+    .campus-buttons button p{
+        font-size: 16px;
+    }
+}
+

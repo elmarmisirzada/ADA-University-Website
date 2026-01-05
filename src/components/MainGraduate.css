@@ -159,3 +159,132 @@
 .evaluation-process p + p {
     margin-top: 35px;
 }
+
+/* Submenu UI should only appear on mobile */
+.submenu-toggle,
+.submenu-backdrop,
+.submenu-close{
+    display: none;
+}
+
+@media (max-width: 768px){
+    .main-graduate-total{
+        padding: 28px 0 !important;
+    }
+
+    .graduate-content-wrapper{
+        display: block !important;
+    }
+
+    .submenu-toggle{
+        display: block !important;
+        position: fixed !important;
+        left: 0 !important;
+        top: 50% !important;
+        transform: translateY(-50%) !important;
+        background: #fff !important;
+        color: #292929 !important;
+        border: 1px solid #e0e0e0 !important;
+        border-left: 0 !important;
+        padding: 10px 8px !important;
+        border-radius: 0 10px 10px 0 !important;
+        cursor: pointer !important;
+        z-index: 1300 !important;
+        writing-mode: vertical-rl !important;
+        text-orientation: mixed !important;
+    }
+
+    .submenu-backdrop{
+        display: block !important;
+        position: fixed !important;
+        inset: 0 !important;
+        background: rgba(0, 0, 0, 0.25) !important;
+        border: 0 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        cursor: pointer !important;
+        z-index: 1150 !important;
+    }
+
+    .main-graduate-total .sidebar-menu{
+        display: none;
+        position: fixed !important;
+        left: 0 !important;
+        top: 0 !important;
+        bottom: 0 !important;
+        width: min(320px, 86vw) !important;
+        height: auto !important;
+        overflow: auto !important;
+        z-index: 1200 !important;
+    }
+
+    .submenu-close{
+        display: block !important;
+        width: 100% !important;
+        text-align: left !important;
+        padding: 12px 16px !important;
+        border: 0 !important;
+        background: transparent !important;
+        font-weight: 600 !important;
+        color: #292929 !important;
+        cursor: pointer !important;
+    }
+
+    .main-graduate-total .sidebar-menu.is-open{
+        display: block !important;
+    }
+
+    .main-graduate-total .main-content{
+        padding: 0 14px !important;
+        padding-left: 44px !important;
+        overflow-x: hidden !important;
+    }
+
+    /* Bootstrap utilities (py-4) use !important; keep our spacing consistent */
+    .main-graduate-total .main-content .py-4{
+        padding-top: 18px !important;
+        padding-bottom: 18px !important;
+    }
+
+    .main-graduate-total .main-content a{
+        overflow-wrap: anywhere !important;
+        word-break: break-word !important;
+    }
+
+    .main-graduate-total .main-content ul,
+    .main-graduate-total .main-content ol{
+        padding-left: 20px !important;
+        margin-bottom: 12px !important;
+    }
+
+    .main-graduate-total .main-content h1{
+        font-size: 28px !important;
+        margin-bottom: 14px !important;
+    }
+
+    .main-graduate-total .main-content h2{
+        font-size: 22px !important;
+        line-height: 120% !important;
+        margin-bottom: 12px !important;
+    }
+
+    .main-graduate-total .main-content p,
+    .main-graduate-total .main-content ul li{
+        font-size: 16px !important;
+        line-height: 26px !important;
+    }
+
+    /* Programs table: swipe horizontally on mobile */
+    .main-graduate-total .programs-table{
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch !important;
+    }
+
+    .main-graduate-total .programs-table table{
+        min-width: 780px !important;
+    }
+
+    .main-graduate-total .programs-table thead tr:first-child th{
+        text-align: left !important;
+    }
+}

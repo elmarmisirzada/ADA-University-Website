@@ -46,3 +46,46 @@
     gap: 12px;
     
 }
+
+@media (max-width: 768px){
+    .partners-total{
+        margin-bottom: 60px;
+    }
+
+    .partners-total .container{
+        max-width: 100%;
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    .partners-total button{
+        padding: 24px 22px;
+    }
+
+    .four-part-partners h2{
+        font-size: 24px;
+        margin: 0 0 14px;
+    }
+
+    .four-part-partners a{
+        font-size: 14px;
+        margin-bottom: 12px;
+        line-height: 1.4;
+    }
+
+    .fourth-partner p{
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+
+    .first-partner,
+    .second-partner,
+    .third-partner,
+    .fourth-partner{
+        margin-bottom: 26px;
+    }
+
+    .fourth-partner{
+        margin-bottom: 0;
+    }
+}

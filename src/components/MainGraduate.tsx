@@ -1,19 +1,74 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './MainGraduate.css'
 
 const MainGraduate: React.FC = () => {
+  const [isMobileSubmenuOpen, setIsMobileSubmenuOpen] = useState(false)
+
+  const scrollToSection = (id: string) => {
+    const target = document.getElementById(id)
+    if (!target) return
+
+    const header = document.querySelector('.header-wrapper') as HTMLElement | null
+    const headerHeight = header ? header.getBoundingClientRect().height : 0
+    const extraOffset = 12
+
+    const top = target.getBoundingClientRect().top + window.scrollY - headerHeight - extraOffset
+    window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' })
+
+    try {
+      window.history.replaceState(null, '', `#${id}`)
+    } catch {
+      // ignore
+    }
+  }
+
+  const handleSubmenuClick = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
+    e.preventDefault()
+    scrollToSection(id)
+    setIsMobileSubmenuOpen(false)
+  }
+
   return (
     <div className="main-graduate-total">
       <div className="graduate-content-wrapper">
-        <aside className="sidebar-menu">
+        <button
+          type="button"
+          className="submenu-toggle"
+          onClick={() => setIsMobileSubmenuOpen((v) => !v)}
+          aria-expanded={isMobileSubmenuOpen}
+          aria-controls="graduate-submenu"
+        >
+          Sub menu
+        </button>
+
+        {isMobileSubmenuOpen && (
+          <button
+            type="button"
+            className="submenu-backdrop"
+            aria-label="Close submenu"
+            onClick={() => setIsMobileSubmenuOpen(false)}
+          />
+        )}
+
+        <aside
+          id="graduate-submenu"
+          className={`sidebar-menu${isMobileSubmenuOpen ? ' is-open' : ''}`}
+        >
+          <button
+            type="button"
+            className="submenu-close"
+            onClick={() => setIsMobileSubmenuOpen(false)}
+          >
+            Close
+          </button>
           <ul>
-            <li><a href="#graduate-admissions">Graduate Admissions</a></li>
-            <li><a href="#application-process">Application Process</a></li>
-            <li><a href="#deadlines">Deadlines</a></li>
-            <li><a href="#evaluation-process">Evaluation Process</a></li>
-            <li><a href="#financial-aid">Financial Aid</a></li>
-            <li><a href="#admission-events">Admission Events</a></li>
-            <li><a href="#contact-us">Contact us</a></li>
+            <li><a href="#graduate-admissions" onClick={(e) => handleSubmenuClick(e, 'graduate-admissions')}>Graduate Admissions</a></li>
+            <li><a href="#application-process" onClick={(e) => handleSubmenuClick(e, 'application-process')}>Application Process</a></li>
+            <li><a href="#deadlines" onClick={(e) => handleSubmenuClick(e, 'deadlines')}>Deadlines</a></li>
+            <li><a href="#evaluation-process" onClick={(e) => handleSubmenuClick(e, 'evaluation-process')}>Evaluation Process</a></li>
+            <li><a href="#financial-aid" onClick={(e) => handleSubmenuClick(e, 'financial-aid')}>Financial Aid</a></li>
+            <li><a href="#admission-events" onClick={(e) => handleSubmenuClick(e, 'admission-events')}>Admission Events</a></li>
+            <li><a href="#contact-us" onClick={(e) => handleSubmenuClick(e, 'contact-us')}>Contact us</a></li>
           </ul>
         </aside>
 

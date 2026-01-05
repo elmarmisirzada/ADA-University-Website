@@ -13,7 +13,7 @@ const Partners: React.FC = () => {
                 <button>
                     <div className="four-part-partners">
                         <div className="row">
-                            <div className="first-partner col-3">
+                            <div className="first-partner col-12 col-md-3">
                                 <h2>
                                     Partners
                                 </h2>
@@ -24,7 +24,7 @@ const Partners: React.FC = () => {
                                 <a href="https://www.uniroma1.it/en/pagina-strutturale/home">Sapienza University of Rome</a>
                             </div>
 
-                            <div className="second-partner col-3">
+                            <div className="second-partner col-12 col-md-3">
                                 <h2>
                                     Degrees
                                 </h2>
@@ -48,7 +48,7 @@ const Partners: React.FC = () => {
                                     Urban Planning</a>
                             </div>
 
-                            <div className="third-partner col-3">
+                            <div className="third-partner col-12 col-md-3">
                                 <h2>
                                     Certificate <br /> Programs
                                 </h2>
@@ -57,7 +57,7 @@ const Partners: React.FC = () => {
 
                             </div>
 
-                            <div className="fourth-partner col-3">
+                            <div className="fourth-partner col-12 col-md-3">
                                 <h2>
                                     Students
                                 </h2>

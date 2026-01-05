@@ -1,3 +1,9 @@
+.aboutus-italy{
+    padding: 40px 0;
+    background-color: var(--bg-primary);
+    position: relative;
+}
+
 .aboutus-italy h2{
     color: #336178!important;
         font-size: 48px;
@@ -12,4 +18,27 @@
     margin-top: 0;
     margin-bottom: 20px;
     font-size: 18px;
+}
+
+@media (max-width: 768px){
+    .aboutus-italy{
+        padding: 24px 0;
+    }
+
+    .aboutus-italy .container{
+        max-width: 100%;
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    .aboutus-italy h2{
+        font-size: 32px;
+        margin-bottom: 14px;
+    }
+
+    .aboutus-italy p{
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 16px;
+    }
 }

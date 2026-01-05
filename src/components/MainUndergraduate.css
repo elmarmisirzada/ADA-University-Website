@@ -158,3 +158,155 @@
 .international-applicants{
     padding-top: 50px;
 }
+
+/* Submenu UI should only appear on mobile */
+.submenu-toggle,
+.submenu-backdrop,
+.submenu-close{
+    display: none;
+}
+
+/* Mobile submenu */
+@media (max-width: 768px){
+    .main-undergraduate-total{
+        padding: 28px 0;
+    }
+
+    .main-undergraduate-total .container{
+        max-width: 100%;
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    .undergraduate-content-wrapper{
+        display: block;
+    }
+
+    .submenu-toggle{
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background: #fff;
+        color: #292929;
+        border: 1px solid #e0e0e0;
+        border-left: 0;
+        padding: 10px 8px;
+        border-radius: 0 10px 10px 0;
+        cursor: pointer;
+        z-index: 1300;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+    }
+
+    .submenu-backdrop{
+        display: block;
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.25);
+        border: 0;
+        padding: 0;
+        margin: 0;
+        cursor: pointer;
+        z-index: 1150;
+    }
+
+    .sidebar-menu{
+        display: none;
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: min(320px, 86vw);
+        height: auto;
+        overflow: auto;
+        z-index: 1200;
+    }
+
+    .submenu-close{
+        display: block;
+        width: 100%;
+        text-align: left;
+        padding: 12px 16px;
+        border: 0;
+        background: transparent;
+        font-weight: 600;
+        color: #292929;
+        cursor: pointer;
+    }
+
+    .sidebar-menu.is-open{
+        display: block;
+    }
+
+    .main-content{
+        padding: 0 14px;
+        padding-left: 44px;
+        overflow-x: hidden;
+    }
+
+    /* Readability fixes for International Applicants and everything below */
+    .main-content .py-4{
+        padding-top: 18px !important;
+        padding-bottom: 18px !important;
+    }
+
+    .international-applicants{
+        padding-top: 18px;
+    }
+
+    .main-content p{
+        margin-bottom: 12px;
+    }
+
+    .main-content a{
+        overflow-wrap: anywhere;
+        word-break: break-word;
+    }
+
+    .main-content ul,
+    .main-content ol{
+        padding-left: 20px;
+        margin-bottom: 12px;
+    }
+
+    .main-content ul ul,
+    .main-content ol ol,
+    .main-content ul ol,
+    .main-content ol ul{
+        margin-top: 6px;
+        margin-bottom: 6px;
+    }
+
+    /* Make the programs table swipeable horizontally on mobile */
+    .programs-table{
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .programs-table table{
+        min-width: 780px;
+    }
+
+    .programs-table thead tr:first-child th{
+        text-align: left !important;
+    }
+
+    .main-content h1{
+        font-size: 25px !important ;
+        margin-bottom: 14px;
+    }
+
+    .main-content h2{
+        font-size: 22px !important;
+        line-height: 120%;
+        margin-bottom: 12px;
+    }
+
+    .main-content p,
+    .main-content ul li{
+        font-size: 16px !important;
+        line-height: 26px;
+    }
+}

@@ -1,7 +1,6 @@
 .total-italy-azerbaijan-university {
     position: relative;
     margin-top: 150px;
-    
 }
 
 .image-background {
@@ -117,4 +116,58 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+@media (max-width: 768px){
+    .total-italy-azerbaijan-university{
+        --italy-hero-h: 128px;
+        margin-top: 72px !important;
+    }
+
+    /* Edge-to-edge bars on mobile (no side gaps from Bootstrap container) */
+    .top-italy-azerbaijan-university .container,
+    .bottom-of-top-italy .container{
+        max-width: 100% !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .image-background{
+        height: var(--italy-hero-h) !important;
+        overflow: hidden !important;
+    }
+
+    .background-image{
+        height: 120% !important;
+        object-position: center top !important;
+    }
+
+    .top-italy-azerbaijan-university{
+        padding-top: var(--italy-hero-h) !important;
+        top: 0 !important;
+    }
+
+    .top-italy-azerbaijan-university button{
+        padding: 14px 0 10px 0 !important;
+    }
+
+    .top-italy-azerbaijan-university button h1{
+        padding-left: 14px !important;
+        padding-right: 14px !important;
+        font-size: 22px !important;
+    }
+
+    .bottom-of-top-italy{
+        margin-top: 0 !important;
+        padding: 10px 0 !important;
+        top: 0 !important;
+    }
+
+    .breadcrumb-nav{
+        font-size: 13px !important;
+        gap: 8px !important;
+        flex-wrap: wrap !important;
+        padding-left: 14px !important;
+        padding-right: 14px !important;
+    }
 }
