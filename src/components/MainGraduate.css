@@ -10,12 +10,37 @@
 }
 
 .main-graduate-total .sidebar-menu {
-    flex: 0 0 350px;
     background-color: #f0f2f4;
     padding: 0;
-    position: sticky;
-    top: 170px;
-    align-self: flex-start;
+    width: 100%;
+}
+
+.main-graduate-total .sidebar-col{
+    flex: 0 0 350px;
+    width: 350px;
+    position: relative;
+}
+
+@media (min-width: 769px){
+    .graduate-content-wrapper{
+        align-items: stretch;
+    }
+
+    .main-graduate-total .sidebar-menu.is-docked{
+        position: fixed;
+        max-height: calc(100vh - 160px);
+        overflow-y: auto;
+        z-index: 100;
+    }
+
+    .main-graduate-total .sidebar-menu.is-stopped{
+        position: absolute;
+        left: 0;
+        right: 0;
+        max-height: calc(100vh - 160px);
+        overflow-y: auto;
+        z-index: 100;
+    }
 }
 
 .main-graduate-total .sidebar-menu ul {
@@ -176,6 +201,10 @@
         display: block !important;
     }
 
+    .main-graduate-total .sidebar-col{
+        width: auto;
+    }
+
     .submenu-toggle{
         display: block !important;
         position: fixed !important;
@@ -203,7 +232,7 @@
         padding: 0 !important;
         margin: 0 !important;
         cursor: pointer !important;
-        z-index: 1150 !important;
+        z-index: 4900 !important;
     }
 
     .main-graduate-total .sidebar-menu{
@@ -213,9 +242,9 @@
         top: 0 !important;
         bottom: 0 !important;
         width: min(320px, 86vw) !important;
-        height: auto !important;
+        height: 100dvh !important;
         overflow: auto !important;
-        z-index: 1200 !important;
+        z-index: 5000 !important;
     }
 
     .submenu-close{

@@ -9,13 +9,38 @@
     align-items: flex-start;
 }
 
-.sidebar-menu {
+.main-undergraduate-total .sidebar-col{
     flex: 0 0 350px;
+    width: 350px;
+    position: relative; /* Make sidebar columns positioning context for footer-stop behavior */
+}
+
+.main-undergraduate-total .sidebar-menu {
     background-color: #f0f2f4;
     padding: 0;
-    position: sticky;
-    top: 170px;
-    align-self: flex-start;
+    width: 100%;
+}
+
+@media (min-width: 769px){
+    .undergraduate-content-wrapper{
+        align-items: stretch;
+    }
+
+    .main-undergraduate-total .sidebar-menu.is-docked{
+        position: fixed;
+        max-height: calc(100vh - 160px);
+        overflow-y: auto;
+        z-index: 100;
+    }
+
+    .main-undergraduate-total .sidebar-menu.is-stopped{
+        position: absolute;
+        left: 0;
+        right: 0;
+        max-height: calc(100vh - 160px);
+        overflow-y: auto;
+        z-index: 100;
+    }
 }
 
 .sidebar-menu ul {
@@ -182,6 +207,10 @@
         display: block;
     }
 
+    .main-undergraduate-total .sidebar-col{
+        width: auto;
+    }
+
     .submenu-toggle{
         display: block;
         position: fixed;
@@ -212,16 +241,16 @@
         z-index: 1150;
     }
 
-    .sidebar-menu{
+    .main-undergraduate-total .sidebar-menu{
         display: none;
         position: fixed;
         left: 0;
         top: 0;
         bottom: 0;
         width: min(320px, 86vw);
-        height: auto;
+        height: 100dvh;
         overflow: auto;
-        z-index: 1200;
+        z-index: 5000;
     }
 
     .submenu-close{
@@ -236,7 +265,7 @@
         cursor: pointer;
     }
 
-    .sidebar-menu.is-open{
+    .main-undergraduate-total .sidebar-menu.is-open{
         display: block;
     }
 

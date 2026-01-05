@@ -1,8 +1,85 @@
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import './MainGraduate.css'
 
 const MainGraduate: React.FC = () => {
   const [isMobileSubmenuOpen, setIsMobileSubmenuOpen] = useState(false)
+  const sidebarColRef = useRef<HTMLDivElement | null>(null)
+  const sidebarRef = useRef<HTMLElement | null>(null)
+  const [dockState, setDockState] = useState<
+    | { mode: 'fixed' | 'absolute'; style: React.CSSProperties }
+    | null
+  >(null)
+
+  useEffect(() => {
+    const mq = window.matchMedia('(min-width: 769px)')
+
+    const getFixedTop = () => {
+      const navbar = document.querySelector('.navbar-custom') as HTMLElement | null
+      const header = document.querySelector('.header-wrapper') as HTMLElement | null
+      const navbarH = navbar ? navbar.getBoundingClientRect().height : 0
+      const headerH = header ? header.getBoundingClientRect().height : 0
+
+      return Math.round(navbarH + headerH + 12)
+    }
+
+    const updateDock = () => {
+      if (!mq.matches) {
+        setDockState(null)
+        return
+      }
+
+      const col = sidebarColRef.current
+      if (!col) return
+
+      const fixedTop = getFixedTop()
+      const rect = col.getBoundingClientRect()
+      const shouldDock = rect.top <= fixedTop
+
+      if (!shouldDock) {
+        setDockState(null)
+        return
+      }
+
+      const sidebarEl = sidebarRef.current
+      const sidebarHeight = sidebarEl ? sidebarEl.getBoundingClientRect().height : 0
+
+      const footer = document.querySelector('.footer') as HTMLElement | null
+      const footerTop = footer ? footer.getBoundingClientRect().top + window.scrollY : Infinity
+      const footerGap = 16
+
+      const fixedBottomDoc = window.scrollY + fixedTop + sidebarHeight
+      const maxBottomDoc = footerTop - footerGap
+
+      if (sidebarHeight > 0 && fixedBottomDoc >= maxBottomDoc) {
+        const colTopDoc = rect.top + window.scrollY
+        const maxTopDoc = maxBottomDoc - sidebarHeight
+        const absoluteTop = Math.max(0, Math.round(maxTopDoc - colTopDoc))
+
+        setDockState({ mode: 'absolute', style: { top: `${absoluteTop}px` } })
+        return
+      }
+
+      setDockState({
+        mode: 'fixed',
+        style: {
+          top: `${fixedTop}px`,
+          left: `${Math.round(rect.left)}px`,
+          width: `${Math.round(rect.width)}px`,
+        },
+      })
+    }
+
+    updateDock()
+    window.addEventListener('scroll', updateDock, { passive: true })
+    window.addEventListener('resize', updateDock)
+    mq.addEventListener('change', updateDock)
+
+    return () => {
+      window.removeEventListener('scroll', updateDock)
+      window.removeEventListener('resize', updateDock)
+      mq.removeEventListener('change', updateDock)
+    }
+  }, [])
 
   const scrollToSection = (id: string) => {
     const target = document.getElementById(id)
@@ -50,27 +127,31 @@ const MainGraduate: React.FC = () => {
           />
         )}
 
-        <aside
-          id="graduate-submenu"
-          className={`sidebar-menu${isMobileSubmenuOpen ? ' is-open' : ''}`}
-        >
-          <button
-            type="button"
-            className="submenu-close"
-            onClick={() => setIsMobileSubmenuOpen(false)}
+        <div className="sidebar-col" ref={sidebarColRef}>
+          <aside
+            id="graduate-submenu"
+            ref={sidebarRef}
+            className={`sidebar-menu${dockState?.mode === 'fixed' ? ' is-docked' : ''}${dockState?.mode === 'absolute' ? ' is-stopped' : ''}${isMobileSubmenuOpen ? ' is-open' : ''}`}
+            style={dockState?.style ?? undefined}
           >
-            Close
-          </button>
-          <ul>
-            <li><a href="#graduate-admissions" onClick={(e) => handleSubmenuClick(e, 'graduate-admissions')}>Graduate Admissions</a></li>
-            <li><a href="#application-process" onClick={(e) => handleSubmenuClick(e, 'application-process')}>Application Process</a></li>
-            <li><a href="#deadlines" onClick={(e) => handleSubmenuClick(e, 'deadlines')}>Deadlines</a></li>
-            <li><a href="#evaluation-process" onClick={(e) => handleSubmenuClick(e, 'evaluation-process')}>Evaluation Process</a></li>
-            <li><a href="#financial-aid" onClick={(e) => handleSubmenuClick(e, 'financial-aid')}>Financial Aid</a></li>
-            <li><a href="#admission-events" onClick={(e) => handleSubmenuClick(e, 'admission-events')}>Admission Events</a></li>
-            <li><a href="#contact-us" onClick={(e) => handleSubmenuClick(e, 'contact-us')}>Contact us</a></li>
-          </ul>
-        </aside>
+            <button
+              type="button"
+              className="submenu-close"
+              onClick={() => setIsMobileSubmenuOpen(false)}
+            >
+              Close
+            </button>
+            <ul>
+              <li><a href="#graduate-admissions" onClick={(e) => handleSubmenuClick(e, 'graduate-admissions')}>Graduate Admissions</a></li>
+              <li><a href="#application-process" onClick={(e) => handleSubmenuClick(e, 'application-process')}>Application Process</a></li>
+              <li><a href="#deadlines" onClick={(e) => handleSubmenuClick(e, 'deadlines')}>Deadlines</a></li>
+              <li><a href="#evaluation-process" onClick={(e) => handleSubmenuClick(e, 'evaluation-process')}>Evaluation Process</a></li>
+              <li><a href="#financial-aid" onClick={(e) => handleSubmenuClick(e, 'financial-aid')}>Financial Aid</a></li>
+              <li><a href="#admission-events" onClick={(e) => handleSubmenuClick(e, 'admission-events')}>Admission Events</a></li>
+              <li><a href="#contact-us" onClick={(e) => handleSubmenuClick(e, 'contact-us')}>Contact us</a></li>
+            </ul>
+          </aside>
+        </div>
 
         <main className="main-content" id="graduate-admissions">
           <h1>Graduate Admissions</h1>

@@ -1,8 +1,85 @@
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import './MainUndergraduate.css'
 
 const MainUndergraduate: React.FC = () => {
     const [isMobileSubmenuOpen, setIsMobileSubmenuOpen] = useState(false)
+    const sidebarColRef = useRef<HTMLDivElement | null>(null)
+    const sidebarRef = useRef<HTMLElement | null>(null)
+    const [dockState, setDockState] = useState<
+        | { mode: 'fixed' | 'absolute'; style: React.CSSProperties }
+        | null
+    >(null)
+
+    useEffect(() => {
+        const mq = window.matchMedia('(min-width: 769px)')
+
+        const getFixedTop = () => {
+            const navbar = document.querySelector('.navbar-custom') as HTMLElement | null
+            const header = document.querySelector('.header-wrapper') as HTMLElement | null
+            const navbarH = navbar ? navbar.getBoundingClientRect().height : 0
+            const headerH = header ? header.getBoundingClientRect().height : 0
+
+            return Math.round(navbarH + headerH + 12)
+        }
+
+        const updateDock = () => {
+            if (!mq.matches) {
+                setDockState(null)
+                return
+            }
+
+            const col = sidebarColRef.current
+            if (!col) return
+
+            const fixedTop = getFixedTop()
+            const rect = col.getBoundingClientRect()
+            const shouldDock = rect.top <= fixedTop
+
+            if (!shouldDock) {
+                setDockState(null)
+                return
+            }
+
+            const sidebarEl = sidebarRef.current
+            const sidebarHeight = sidebarEl ? sidebarEl.getBoundingClientRect().height : 0
+
+            const footer = document.querySelector('.footer') as HTMLElement | null
+            const footerTop = footer ? footer.getBoundingClientRect().top + window.scrollY : Infinity
+            const footerGap = 16
+
+            const fixedBottomDoc = window.scrollY + fixedTop + sidebarHeight
+            const maxBottomDoc = footerTop - footerGap
+
+            if (sidebarHeight > 0 && fixedBottomDoc >= maxBottomDoc) {
+                const colTopDoc = rect.top + window.scrollY
+                const maxTopDoc = maxBottomDoc - sidebarHeight
+                const absoluteTop = Math.max(0, Math.round(maxTopDoc - colTopDoc))
+
+                setDockState({ mode: 'absolute', style: { top: `${absoluteTop}px` } })
+                return
+            }
+
+            setDockState({
+                mode: 'fixed',
+                style: {
+                    top: `${fixedTop}px`,
+                    left: `${Math.round(rect.left)}px`,
+                    width: `${Math.round(rect.width)}px`,
+                },
+            })
+        }
+
+        updateDock()
+        window.addEventListener('scroll', updateDock, { passive: true })
+        window.addEventListener('resize', updateDock)
+        mq.addEventListener('change', updateDock)
+
+        return () => {
+            window.removeEventListener('scroll', updateDock)
+            window.removeEventListener('resize', updateDock)
+            mq.removeEventListener('change', updateDock)
+        }
+    }, [])
 
     const scrollToSection = (id: string) => {
         const target = document.getElementById(id)
@@ -50,33 +127,37 @@ const MainUndergraduate: React.FC = () => {
                     />
                 )}
 
-                <aside
-                    id="undergraduate-submenu"
-                    className={`sidebar-menu${isMobileSubmenuOpen ? ' is-open' : ''}`}
-                >
-                    <button
-                        type="button"
-                        className="submenu-close"
-                        onClick={() => setIsMobileSubmenuOpen(false)}
+                <div className="sidebar-col" ref={sidebarColRef}>
+                    <aside
+                        id="undergraduate-submenu"
+                        ref={sidebarRef}
+                        className={`sidebar-menu${dockState?.mode === 'fixed' ? ' is-docked' : ''}${dockState?.mode === 'absolute' ? ' is-stopped' : ''}${isMobileSubmenuOpen ? ' is-open' : ''}`}
+                        style={dockState?.style ?? undefined}
                     >
-                        Close
-                    </button>
-                    <ul>
-                        <li><a href="#undergraduate-admissions" onClick={(e) => handleSubmenuClick(e, 'undergraduate-admissions')}>Undergraduate Admissions</a></li>
-                        <li><a href="#international-applicants" onClick={(e) => handleSubmenuClick(e, 'international-applicants')}>International Applicants</a></li>
-                        <li><a href="#citizens-of-azerbaijan" onClick={(e) => handleSubmenuClick(e, 'citizens-of-azerbaijan')}>Citizens of Azerbaijan</a></li>
-                        <li><a href="#state-examination-center" onClick={(e) => handleSubmenuClick(e, 'state-examination-center')}>State Examination Center (SEC) Route</a></li>
-                        <li><a href="#sat-route" onClick={(e) => handleSubmenuClick(e, 'sat-route')}>SAT Route</a></li>
-                        <li><a href="#test-result-route" onClick={(e) => handleSubmenuClick(e, 'test-result-route')}>IB, A level, AP Test Result Route</a></li>
-                        <li><a href="#ada-school-route" onClick={(e) => handleSubmenuClick(e, 'ada-school-route')}>ADA School Route</a></li>
-                        <li><a href="#olympiad-winners" onClick={(e) => handleSubmenuClick(e, 'olympiad-winners')}>Route for Olympiad Winners</a></li>
-                        <li><a href="#deadlines" onClick={(e) => handleSubmenuClick(e, 'deadlines')}>Deadlines</a></li>
-                        <li><a href="#transfer-admission" onClick={(e) => handleSubmenuClick(e, 'transfer-admission')}>Transfer Admission</a></li>
-                        <li><a href="#attend-events" onClick={(e) => handleSubmenuClick(e, 'attend-events')}>Attend events</a></li>
-                        <li><a href="#contact-us" onClick={(e) => handleSubmenuClick(e, 'contact-us')}>Contact us</a></li>
-                    </ul>
+                        <button
+                            type="button"
+                            className="submenu-close"
+                            onClick={() => setIsMobileSubmenuOpen(false)}
+                        >
+                            Close
+                        </button>
+                        <ul>
+                            <li><a href="#undergraduate-admissions" onClick={(e) => handleSubmenuClick(e, 'undergraduate-admissions')}>Undergraduate Admissions</a></li>
+                            <li><a href="#international-applicants" onClick={(e) => handleSubmenuClick(e, 'international-applicants')}>International Applicants</a></li>
+                            <li><a href="#citizens-of-azerbaijan" onClick={(e) => handleSubmenuClick(e, 'citizens-of-azerbaijan')}>Citizens of Azerbaijan</a></li>
+                            <li><a href="#state-examination-center" onClick={(e) => handleSubmenuClick(e, 'state-examination-center')}>State Examination Center (SEC) Route</a></li>
+                            <li><a href="#sat-route" onClick={(e) => handleSubmenuClick(e, 'sat-route')}>SAT Route</a></li>
+                            <li><a href="#test-result-route" onClick={(e) => handleSubmenuClick(e, 'test-result-route')}>IB, A level, AP Test Result Route</a></li>
+                            <li><a href="#ada-school-route" onClick={(e) => handleSubmenuClick(e, 'ada-school-route')}>ADA School Route</a></li>
+                            <li><a href="#olympiad-winners" onClick={(e) => handleSubmenuClick(e, 'olympiad-winners')}>Route for Olympiad Winners</a></li>
+                            <li><a href="#deadlines" onClick={(e) => handleSubmenuClick(e, 'deadlines')}>Deadlines</a></li>
+                            <li><a href="#transfer-admission" onClick={(e) => handleSubmenuClick(e, 'transfer-admission')}>Transfer Admission</a></li>
+                            <li><a href="#attend-events" onClick={(e) => handleSubmenuClick(e, 'attend-events')}>Attend events</a></li>
+                            <li><a href="#contact-us" onClick={(e) => handleSubmenuClick(e, 'contact-us')}>Contact us</a></li>
+                        </ul>
 
-                </aside>
+                    </aside>
+                </div>
 
                 <main className="main-content" id="undergraduate-admissions">
                     <h1>Undergraduate Admissions</h1>
